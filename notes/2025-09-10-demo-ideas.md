@@ -14,4 +14,10 @@ Docs, scrape, database, facts and context engineering.
 
 images to text; search a city for services; etc.
 
+## a data conversion loop
+
+you have data in format A (and examples) and you want format B (and you can provide a few examples)
+
+loop writes a small python file, runs in a container with random subset of
+input, compares the output, feeds error back to llm, continue until tests pass
 
