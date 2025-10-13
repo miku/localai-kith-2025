@@ -8,6 +8,7 @@ import datetime
 import pandas as pd
 import requests
 from io import StringIO
+import sys
 
 if __name__ == "__main__":
     page = "https://en.wikipedia.org/wiki/List_of_large_language_models"
@@ -16,6 +17,7 @@ if __name__ == "__main__":
     if len(dfs) < 1:
         raise ValueError(f"could not fetch: {page}")
     df = dfs[0]
+    print("\n".join(df.columns.tolist()), file=sys.stderr)
     with open(f"{datetime.date.today()}-wikipedia-list-of-llm.md", "w") as f:
         proprietary_labels = [
             "Proprietary",
@@ -23,9 +25,11 @@ if __name__ == "__main__":
             "Proprietary[57]",
             "Non-commercial research[d]",
         ]
-        free = df[["Name", "Release date[a]", "License[c]"]][
+        free = df[["Name", "Release date[a]", "Developer", "License[c]"]][
             ~df["License[c]"].isin(proprietary_labels)
         ]
-        free = free.reset_index()
+        free["Developer"] = free["Developer"].str.slice(0, 12)
+        free["License[c]"] = free["License[c]"].str.slice(0, 20)
+        free.reset_index(drop=True, inplace=True)
         free.to_markdown(f)
         f.write("\n")
