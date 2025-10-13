@@ -181,3 +181,62 @@ projected 1M users that would amount to about EUR 5-10 per year per user.
 
 ![](/static/header_hu_21bbca9802774865.webp)
 
+
+## Ten Example Use Cases
+
+### General Chat
+
+> LLM, RAG
+
+* install application, install model host (if needed), run chat, RAG, etc.
+* research; learning; legislation
+
+### Support Chat
+
+* chat, rag, docs
+
+TODO:
+
+* match images of products to product manuals
+* load manual into a rag system; preprocessed manuals
+* answer questions over docs
+* prototype: support chat at LU
+
+### License Plate Scan
+
+> image, text
+
+* image understanding
+* scan license plate in variable image
+* inspiration: Berlin Rathaus Spandau
+
+### Document Aggregation
+
+> text, data, aggregation
+
+* fuse company reports and news to automated reports
+
+
+### Radio Search
+
+> audio, text, search
+
+### Language Learning
+
+> text, coach
+
+* text
+* category
+* future scenario: learning books will all be adjusted for your pace; you may
+  learn more, because the book understands you
+
+### Similarity search
+
+* project things into 2D
+* images, documents; sounds
+
+### GIF it up
+
+* "winning a contest with AI, GIF and Go"
+
+
