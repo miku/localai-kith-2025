@@ -64,18 +64,6 @@ Model availability is not binary, there is a spectrum:
 > verfügbar; auch der Quellcode des Trainingsprozesses sowie die Trainingsdaten
 > sind offengelegt. -- [Apertus](https://de.wikipedia.org/wiki/Apertus)
 
-The ocean of models and the research landscape is vast.
-
-![](static/model_evolution.png) (from 10/2023,
-[Link](https://www.researchgate.net/figure/A-chronological-overview-of-large-language-models-LLMs-multimodal-and-scientific_fig2_373451304),
-from [Examining User-Friendly and Open-Sourced Large GPT Models: A Survey on
-Language, Multimodal, and Scientific GPT
-Models](https://arxiv.org/abs/2308.14149))
-
-As of 2025-10-13, popular model hosting site huggingface lists 2147127 models.
-
-![](static/screenshot-2025-10-13-172823-hf-models.png)
-
 And more, from [List of large language models](https://en.wikipedia.org/wiki/List_of_large_language_models):
 
 |    |   index | Name                | Release date[a]    | License[c]                            |
@@ -127,6 +115,18 @@ And more, from [List of large language models](https://en.wikipedia.org/wiki/Lis
 | 44 |      83 | GLM-4.6             | September 30, 2025 | Apache 2.0                            |
 
 Via: [scripts/scrape-llm-table.py](scripts/scrape-llm-table.py)
+
+And more. The ocean of models and the research landscape is vast.
+
+![](static/model_evolution.png) (from 10/2023,
+[Link](https://www.researchgate.net/figure/A-chronological-overview-of-large-language-models-LLMs-multimodal-and-scientific_fig2_373451304),
+from [Examining User-Friendly and Open-Sourced Large GPT Models: A Survey on
+Language, Multimodal, and Scientific GPT
+Models](https://arxiv.org/abs/2308.14149))
+
+As of 2025-10-13, popular model hosting site huggingface lists 2147127 models.
+
+![](static/screenshot-2025-10-13-172823-hf-models.png)
 
 ## Applications
 
