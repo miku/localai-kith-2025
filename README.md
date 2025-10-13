@@ -24,7 +24,7 @@ Since 2008 I try to live by the motto:
 > 2008](https://youtu.be/LNjJTgXujno?si=IweUD5YQlbZ7eTWw&t=185) (5.4K view; I
 > watched it a few times!)
 
-![](static/norvig-2008.png)
+[![](static/norvig-2008.png)](https://youtu.be/LNjJTgXujno?si=IweUD5YQlbZ7eTWw&t=185)
 
 ## What is an open model?
 
