@@ -14,7 +14,7 @@
 
 * an LLM is just a file!
 
-![](static/smollm2-360-head.png)
+![](static/smollm2-360-head-s.webp)
 
 Model availability is not binary, there is a spectrum:
 
