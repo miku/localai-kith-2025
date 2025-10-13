@@ -32,7 +32,7 @@ Since 2008 I try to live by the motto:
 
 ![](static/smollm2-360-head-s.webp)
 
-Or number as colors (cutout):
+Or weights as colors (cutout):
 
 ![](static/screenshot-2025-10-13-174543-hf-smollm2-binpic.png)
 
