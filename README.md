@@ -1,6 +1,8 @@
 # Open models for AI applications
 
-> [KI-Tage](https://ki-tage.webwirtschaft.net/) Halle (Saale), 2025-11-20/21, [90min]
+> [KI-Tage](https://ki-tage.webwirtschaft.net/) Halle (Saale), [Martin
+> Czygan](https://de.linkedin.com/in/martin-czygan-58348842), 2025-11-21
+> 11:30-13:00 [90min]
 
 ## Overview
 
