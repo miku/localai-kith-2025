@@ -66,7 +66,11 @@ Model availability is not binary, there is a spectrum:
 
 The ocean of models and the research landscape is vast.
 
-![](static/model_evolution.png) (from 10/2023)
+![](static/model_evolution.png) (from 10/2023,
+[Link](https://www.researchgate.net/figure/A-chronological-overview-of-large-language-models-LLMs-multimodal-and-scientific_fig2_373451304),
+from [Examining User-Friendly and Open-Sourced Large GPT Models: A Survey on
+Language, Multimodal, and Scientific GPT
+Models](https://arxiv.org/abs/2308.14149))
 
 As of 2025-10-13, popular model hosting site huggingface lists 2147127 models.
 
