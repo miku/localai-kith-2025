@@ -1,7 +1,6 @@
 # Open models for AI applications
 
-> [KI-Tage](https://ki-tage.webwirtschaft.net/) Halle (Saale), [Martin
-> Czygan](https://de.linkedin.com/in/martin-czygan-58348842), 2025-11-21
+> [KI-Tage](https://ki-tage.webwirtschaft.net/) Halle (Saale), [Martin Czygan](https://de.linkedin.com/in/martin-czygan-58348842), 2025-11-21
 > 11:30-13:00 [90min]
 
 ## Overview
@@ -9,6 +8,23 @@
 * talk 10 minutes about the why (and why not)
 * have 10 demos (about 5 minutes each) as input, up for discussion; all built with openly available models and run on own hardware
 * generic ideas and outlook
+
+## About me
+
+* Software developer, working on projects at [Leipzig University
+  Library](https://de.wikipedia.org/wiki/Universit%C3%A4tsbibliothek_Leipzig),
+[Internet Archive](https://archive.org) and [Mistral](https://mistral.ai)
+* Previously also consultant, author, lecturer
+
+Since 2008 I try to live by the motto:
+
+> "The key here is that no matter how agile you are as coders, [...] data is
+> going to be more agile than code. Because you going to write the code
+> yourself, but the data you can leverage." -- [Peter Norvig at Start School
+> 2008](https://youtu.be/LNjJTgXujno?si=IweUD5YQlbZ7eTWw&t=185) (5.4K view; I
+> watched it a few times!)
+
+![](static/norvig-2008.png)
 
 ## What is an open model?
 
