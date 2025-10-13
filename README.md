@@ -16,6 +16,10 @@
 
 ![](static/smollm2-360-head-s.webp)
 
+Or number as colors (cutout):
+
+![](static/screenshot-2025-10-13-174543-hf-smollm2-binpic.png)
+
 Model availability is not binary, there is a spectrum:
 
 > We propose a framework to assess six levels of access to generative AI
