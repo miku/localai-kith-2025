@@ -5,8 +5,8 @@
 ## Overview
 
 * talk 10 minutes about the why (and why not)
-* have 10 demos (about 5 minutes each) as input, up for discussion
-*
+* have 10 demos (about 5 minutes each) as input, up for discussion; all built with openly available models and run on own hardware
+* generic ideas and outlook
 
 ## What is an open model?
 
