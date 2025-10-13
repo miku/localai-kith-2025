@@ -29,6 +29,40 @@ Model availability is not binary, there is a spectrum:
 * **downloadable access** and
 * **fully open**.
 
+## List of popular open weights models
+
+* [Llama](https://www.llama.com/)
+* [Mistral](https://docs.mistral.ai/getting-started/models/models_overview/#open-models)
+* [Gemma](https://deepmind.google/models/gemma/)
+* [Qwen](https://huggingface.co/Qwen)
+* [DeepSeek](https://huggingface.co/deepseek-ai)
+* [GPT-OSS](https://en.wikipedia.org/wiki/Products_and_applications_of_OpenAI#GPT-OSS)
+* [Apertus](https://de.wikipedia.org/wiki/Apertus)
+
+> Apertus wurde im September 2025 vorgestellt und gilt damit als das erste
+> große Sprachmodell aus der Schweiz. Es ist vollständig als Open Source
+> verfügbar; auch der Quellcode des Trainingsprozesses sowie die Trainingsdaten
+> sind offengelegt. -- [Apertus](https://de.wikipedia.org/wiki/Apertus)
+
+The ocean of models and the research landscape is vast.
+
+![](static/model_evolution.png) (from 10/2023)
+
+As of 2025-10-13, popular model hosting site huggingface lists 2147127 models.
+
+![](static/screenshot-2025-10-13-172823-hf-models.png)
+
+## Applications
+
+Basic chat application, e.g. desktop, web, mobile that you can run on prem or
+on your laptop, etc.
+
+* [LMStudio](https://lmstudio.ai/)
+* [ollama](https://ollama.com/)
+* [AnythingLLM](https://anythingllm.com/)
+* [Nomic GPT4All](https://www.nomic.ai/gpt4all), [Anleitung](https://www.htw-berlin.de/fileadmin/HTW/Zentral/LSC/Formulare/Lokale_Sprachmodelle_mit_GPT4All_nutzen.pdf.pdf)
+* ...
+
 ## Why?
 
 * privacy
