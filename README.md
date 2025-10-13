@@ -76,7 +76,7 @@ As of 2025-10-13, popular model hosting site huggingface lists 2147127 models.
 
 ![](static/screenshot-2025-10-13-172823-hf-models.png)
 
-And more:
+And more, from [List of large language models](https://en.wikipedia.org/wiki/List_of_large_language_models):
 
 |    |   index | Name                | Release date[a]    | License[c]                            |
 |---:|--------:|:--------------------|:-------------------|:--------------------------------------|
