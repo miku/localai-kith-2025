@@ -27,11 +27,21 @@ Since 2008 I try to live by the motto:
 [![](static/norvig-2008.png)](https://youtu.be/LNjJTgXujno?si=IweUD5YQlbZ7eTWw&t=185)
 
 > Disclaimer: all views are my own; engineering lives from limits and
-> constraints and promises of AI for various tasks are varying widely;
-> unreflected use of current generation AI products can harm productivity
+> constraints and applications of AI for various tasks have mixed results (and
+> there is lots of guesswork); unreflected use of current generation AI
+> products can harm productivity and will just be expensive.
 
+Jim Covello (Goldman Sachs) in [Global Macro Research, Issue 129,
+07/2024](https://www.goldmansachs.com/images/migrated/insights/pages/gs-research/gen-ai--too-much-spend%2C-too-little-benefit-/TOM_AI%202.0_ForRedaction.pdf)
 
+> We estimate that the AI infrastructure buildout will cost over **$1tn in the
+> next several years alone**, which includes spending on data centers, utilities,
+> and applications. So, the crucial question is: **What $1tn problem will AI
+> solve?**
 
+Also in that article: Internet, Web 2.0, Smartphones were all much (relatively)
+cheaper to start with. An e-commerce shop in the late 1990s was not
+significantly more expensive than starting a physical store.
 
 ## What is an open model?
 
@@ -247,29 +257,12 @@ TODO:
 * "winning a contest with AI, GIF and Go"
 
 
-## Economic impact
-
-> AI will drive this growth in three important ways. First, it will
-lead to a strong increase in labour productivity (by up to 40 %) due to
-innovative technologies enabling more efficient workforce-related time
-management. Secondly, AI will create a new virtual workforce – described as
-'intelligent automation' in the report – capable of solving problems and
-self-learning. Third, the economy will also benefit from the diffusion of
-innovation, which will affect different sectors and create new revenue streams. -- [EPRS | European Parliamentary Research Service, July 2019](https://www.europarl.europa.eu/RegData/etudes/BRIE/2019/637967/EPRS_BRI(2019)637967_EN.pdf)
-
-Automation potential in many areas; not realized; AI not needed, but data
-available for AI may lead to more pressure to rethink current practices.
-
-### Some questions
-
-* Can you access and work with all data that is relevant to your domain in an
-  easy way?
-* Ratio: unique, specific tasks, chore tasks?
-
 ## Outlook
 
-* who does not love a reliable assistant for everyday tasks
-* offline use cases are better to start with (cheaper, easier to experiment with, ...)
-* stay in control of your prompt, data and document your process
-* just wait a few more years until the dust settles; do a small project now, then wait and observe
+My expectation:
 
+The current AI tech will not deliver the value projected and a lot of the
+hardware will be up for sale, cheap rent in a few years, say 2028. By that
+time, we understand more about training models more efficiently or we just
+understand that some simpler, more transparent program will deliver actual
+value.
