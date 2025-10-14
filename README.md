@@ -11,10 +11,10 @@
 
 ## About me
 
-* Software developer, working on projects at [Leipzig University
+* software developer, working on projects at [Leipzig University
   Library](https://de.wikipedia.org/wiki/Universit%C3%A4tsbibliothek_Leipzig),
 [Internet Archive](https://archive.org) and [Mistral](https://mistral.ai)
-* Previously also consultant, author, lecturer
+* previously also consultant, author, lecturer
 
 Since 2008 I try to live by the motto:
 
