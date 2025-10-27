@@ -13,7 +13,7 @@
 
 * software developer, working on projects at [Leipzig University
   Library](https://de.wikipedia.org/wiki/Universit%C3%A4tsbibliothek_Leipzig),
-[Internet Archive](https://archive.org) and [Mistral](https://mistral.ai)
+[Internet Archive](https://archive.org)
 * previously also consultant, author, lecturer
 
 Since 2008 I try to live by the motto:
@@ -266,3 +266,7 @@ hardware will be up for sale, cheap rent in a few years, say 2028. By that
 time, we understand more about training models more efficiently or we just
 understand that some simpler, more transparent program will deliver actual
 value.
+
+In the meantime, I hope organizations will improve their internal data access,
+so they will be ready, when more substantial improvements can be made.
+
