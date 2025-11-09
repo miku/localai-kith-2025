@@ -5,9 +5,17 @@
 
 ## Overview
 
-* talk 10 minutes about the why (and why not) of open models
-* have 10 demos (about 5 minutes each) as input, up for discussion; all built with openly available models and run on own hardware
-* generic ideas and outlook
+* talk about ten minutes about the what and why (and why not) of open models
+* present and discuss ten examples, built with open models; as templates for ideas
+* wrap-up and a simple project scaffold
+
+## Disclaimer
+
+I am excited (as anyone) by certain possibilities. But also, there is still a
+long way to go for a lot of things people may assume are already solved. CPU
+cycles are also still a thing (why use 1B instructions, if 1M could also do).
+
+Views here are my own.
 
 ## About me
 
@@ -15,6 +23,7 @@
   Library](https://de.wikipedia.org/wiki/Universit%C3%A4tsbibliothek_Leipzig),
 [Internet Archive](https://archive.org)
 * previously also consultant, author, lecturer
+
 
 Since 2008 I try to live by the motto:
 
@@ -42,6 +51,15 @@ Jim Covello (Goldman Sachs) in [Global Macro Research, Issue 129,
 Also in that article: Internet, Web 2.0, Smartphones were all much (relatively)
 cheaper to start with. An e-commerce shop in the late 1990s was not
 significantly more expensive than starting a physical store.
+
+## Modalities
+
+We will look at various model and modalities:
+
+* [ ] text generation (rag summary)
+* [ ] text clustering
+* [ ] tool calling (deep research)
+* [ ] audio-to-text (radio transcripts)
 
 ## What is an open model?
 
@@ -155,6 +173,7 @@ on your laptop, etc.
 * [ollama](https://ollama.com/)
 * [AnythingLLM](https://anythingllm.com/)
 * [Nomic GPT4All](https://www.nomic.ai/gpt4all), [Anleitung](https://www.htw-berlin.de/fileadmin/HTW/Zentral/LSC/Formulare/Lokale_Sprachmodelle_mit_GPT4All_nutzen.pdf.pdf)
+* [Jan.ai](https://www.jan.ai/)
 * ...
 
 ## Why?
