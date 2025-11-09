@@ -6,7 +6,7 @@
 ## Overview
 
 * talk about ten minutes about the what and why (and why not) of open models
-* present and discuss ten examples, built with open models; as templates for ideas
+* present and discuss ten examples, built with open models; in the best case templates for your own ideas
 * wrap-up and a simple project scaffold
 
 ## Disclaimer
@@ -59,7 +59,8 @@ We will look at various model and modalities:
 * [ ] text generation (rag summary)
 * [ ] text clustering
 * [ ] tool calling (deep research)
-* [ ] audio-to-text (radio transcripts)
+* [ ] audio-to-text (radio transcripts, full text search in audio)
+* [ ] image to text ("P")
 
 ## What is an open model?
 
