@@ -5,17 +5,36 @@
 
 ## Overview
 
-* talk about ten minutes about the what and why (and why not) of open models
-* present and discuss ten examples, built with open models; in the best case templates for your own ideas
-* wrap-up and a simple project scaffold
+* what and why (and why not) of open models [10]
+* using open models [20]
+* building with open models; with examples, built with open models; templates [30]
+* wrap-up and a simple project scaffold [10]
 
 ## Disclaimer
 
-I am excited (as anyone) by certain possibilities. But also, there is still a
+> I am excited (as anyone) by certain possibilities. But also, there is still a
 long way to go for a lot of things people may assume are already solved. CPU
 cycles are also still a thing (why use 1B instructions, if 1M could also do).
 
-Views here are my own.
+Recently, read in FAZ (12.11.2025): "Aufgaben wie Texte verfassen, Folien erstellen, Daten
+auswerten oder Software schreiben beherrscht die Technologie inzwischen
+zuverlässig." -- [KI-Kompetenzen: Worauf es im Job wirklich ankommt](https://www.faz.net/pro/digitalwirtschaft/zukunft-der-arbeit/ki-kompetenzen-worauf-es-im-job-wirklich-ankommt-accg-110768933.html)
+
+> **Views here are my own.**
+
+General questions:
+
+> Jim Covello (Goldman Sachs) in [Global Macro Research, Issue 129,
+07/2024](https://www.goldmansachs.com/images/migrated/insights/pages/gs-research/gen-ai--too-much-spend%2C-too-little-benefit-/TOM_AI%202.0_ForRedaction.pdf)
+
+> We estimate that the AI infrastructure buildout will cost over **$1tn in the
+> next several years alone**, which includes spending on data centers, utilities,
+> and applications. So, the crucial question is: **What $1tn problem will AI
+> solve?**
+
+> Also in that article: Internet, Web 2.0, Smartphones were all much (relatively)
+> cheaper to start with. An e-commerce shop in the late 1990s was not
+> significantly more expensive than starting a physical store.
 
 ## About me
 
@@ -23,7 +42,6 @@ Views here are my own.
   Library](https://de.wikipedia.org/wiki/Universit%C3%A4tsbibliothek_Leipzig),
 [Internet Archive](https://archive.org)
 * previously also consultant, author, lecturer
-
 
 Since 2008 I try to live by the motto:
 
@@ -34,33 +52,6 @@ Since 2008 I try to live by the motto:
 > watched it a few times!)
 
 [![](static/norvig-2008.png)](https://youtu.be/LNjJTgXujno?si=IweUD5YQlbZ7eTWw&t=185)
-
-> Disclaimer: all views are my own; engineering lives from limits and
-> constraints and applications of AI for various tasks have mixed results (and
-> there is lots of guesswork); unreflected use of current generation AI
-> products can harm productivity and will just be expensive.
-
-Jim Covello (Goldman Sachs) in [Global Macro Research, Issue 129,
-07/2024](https://www.goldmansachs.com/images/migrated/insights/pages/gs-research/gen-ai--too-much-spend%2C-too-little-benefit-/TOM_AI%202.0_ForRedaction.pdf)
-
-> We estimate that the AI infrastructure buildout will cost over **$1tn in the
-> next several years alone**, which includes spending on data centers, utilities,
-> and applications. So, the crucial question is: **What $1tn problem will AI
-> solve?**
-
-Also in that article: Internet, Web 2.0, Smartphones were all much (relatively)
-cheaper to start with. An e-commerce shop in the late 1990s was not
-significantly more expensive than starting a physical store.
-
-## Modalities
-
-We will look at various model and modalities:
-
-* [ ] text generation (rag summary)
-* [ ] text clustering
-* [ ] tool calling (deep research)
-* [ ] audio-to-text (radio transcripts, full text search in audio)
-* [ ] image to text ("P")
 
 ## What is an open model?
 
@@ -218,6 +209,12 @@ projected 1M users that would amount to about EUR 5-10 per year per user.
 
 ![](/static/header_hu_21bbca9802774865.webp)
 
+
+## Using Open Models
+
+* [ ] Download Desktop App
+* [ ] Download Model
+* [ ] Done
 
 ## Ten Example Use Cases
 
