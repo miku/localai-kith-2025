@@ -10,6 +10,23 @@
 * building with open models; with examples, built with open models; templates [30]
 * wrap-up and a simple project scaffold [10]
 
+## About me
+
+* software developer, working on projects at [Leipzig University
+  Library](https://de.wikipedia.org/wiki/Universit%C3%A4tsbibliothek_Leipzig),
+[Internet Archive](https://archive.org)
+* previously also consultant, author, lecturer
+
+Since 2008 I try to live by the motto:
+
+> "The key here is that no matter how agile you are as coders, [...] data is
+> going to be more agile than code. Because you going to write the code
+> yourself, but the data you can leverage." -- [Peter Norvig at Start School
+> 2008](https://youtu.be/LNjJTgXujno?si=IweUD5YQlbZ7eTWw&t=185) (5.4K view; I
+> watched it a few times!)
+
+[![](static/norvig-2008.png)](https://youtu.be/LNjJTgXujno?si=IweUD5YQlbZ7eTWw&t=185)
+
 ## Disclaimer
 
 > I am excited (as anyone) by certain possibilities. But also, there is still a
@@ -36,22 +53,6 @@ General questions:
 > cheaper to start with. An e-commerce shop in the late 1990s was not
 > significantly more expensive than starting a physical store.
 
-## About me
-
-* software developer, working on projects at [Leipzig University
-  Library](https://de.wikipedia.org/wiki/Universit%C3%A4tsbibliothek_Leipzig),
-[Internet Archive](https://archive.org)
-* previously also consultant, author, lecturer
-
-Since 2008 I try to live by the motto:
-
-> "The key here is that no matter how agile you are as coders, [...] data is
-> going to be more agile than code. Because you going to write the code
-> yourself, but the data you can leverage." -- [Peter Norvig at Start School
-> 2008](https://youtu.be/LNjJTgXujno?si=IweUD5YQlbZ7eTWw&t=185) (5.4K view; I
-> watched it a few times!)
-
-[![](static/norvig-2008.png)](https://youtu.be/LNjJTgXujno?si=IweUD5YQlbZ7eTWw&t=185)
 
 ## What is an open model?
 
