@@ -15,7 +15,7 @@
 * software developer, working on projects at [Leipzig University
   Library](https://de.wikipedia.org/wiki/Universit%C3%A4tsbibliothek_Leipzig),
 [Internet Archive](https://archive.org)
-* previously also consultant, author, lecturer
+* previously also consultant, author, lecturer, [meetup host](https://golangleipzig.space/)
 
 Since 2008 I try to live by the motto:
 
