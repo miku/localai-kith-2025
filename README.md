@@ -15,6 +15,24 @@
 * software developer, working on projects at [Leipzig University
   Library](https://de.wikipedia.org/wiki/Universit%C3%A4tsbibliothek_Leipzig),
 [Internet Archive](https://archive.org)
+
+----
+
+Join me in my time machine: [mmz-halle.de](http://web.archive.org/web/20250000000000*/http://mmz-halle.de)
+
+> [2001-10-17](http://web.archive.org/web/20011017200142/http://www.mmz-halle.de/html/mmz/ausrichtung/ausrichtung_frame.html)
+
+> Zentrum - Entwicklungen brauchen einen Ort, an dem sie stattfinden. Auch im
+> digitalen Zeitalter muss man sich treffen können, miteinander reden, planen,
+> herstellen. Kreative Ideen, wissenschaftlicher Blick und praktisches Tun
+> müssen sich begegnen. Das geht am besten in einem Zentrum, das geht am besten
+> an einem Ort, der ausstrahlt und anzieht.
+
+> [2011-11-09](https://web.archive.org/web/20111109214107/http://www.mmz-halle.de/)
+
+----
+
+* personal AI journal stated with [AI class 2011](https://web.archive.org/web/20110906213406/http://www.ai-class.com/); NLP at UL
 * previously also consultant, author, lecturer, [meetup host](https://golangleipzig.space/)
 
 Since 2008 I try to live by the motto:
