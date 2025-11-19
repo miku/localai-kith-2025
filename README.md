@@ -18,6 +18,8 @@
 
 ----
 
+### Quick archive tour
+
 Join me in my time machine: [mmz-halle.de](http://web.archive.org/web/20250000000000*/http://mmz-halle.de)
 
 > [2001-10-17](http://web.archive.org/web/20011017200142/http://www.mmz-halle.de/html/mmz/ausrichtung/ausrichtung_frame.html)
@@ -29,6 +31,13 @@ Join me in my time machine: [mmz-halle.de](http://web.archive.org/web/2025000000
 > an einem Ort, der ausstrahlt und anzieht.
 
 > [2011-11-09](https://web.archive.org/web/20111109214107/http://www.mmz-halle.de/)
+
+### Digitized material
+
+![](static/ia/screenshot-2025-11-19-170224.png)
+
+
+> Services, [digitization projects](https://digitization.archive.org/projects/)
 
 ----
 
