@@ -59,6 +59,8 @@ Lemonade Stand (1979)
 * personal AI journal stated with [AI class 2011](https://web.archive.org/web/20110906213406/http://www.ai-class.com/); NLP at UL
 * previously also consultant, author, lecturer, [meetup host](https://golangleipzig.space/)
 
+[![](static/screenshot-2025-11-20-023225.png)](https://golangleipzig.space)
+
 Since 2008 I try to live by the motto:
 
 > "The key here is that no matter how agile you are as coders, [...] data is
