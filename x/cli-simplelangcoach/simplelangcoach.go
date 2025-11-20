@@ -49,17 +49,21 @@ func main() {
 	fmt.Printf("Using Ollama API at: %s\n", apiURL)
 
 	// French sentences to translate (10-20 examples)
+	// sentences := []string{
+	// 	"Bonjour, comment allez-vous ?",
+	// 	"Je voudrais un café s'il vous plaît.",
+	// 	"Où se trouve la gare la plus proche ?",
+	// 	"Combien ça coûte ?",
+	// 	"Je ne comprends pas.",
+	// 	"Quel temps fait-il aujourd'hui ?",
+	// 	"Je suis perdu.",
+	// 	"Pouvez-vous m'aider ?",
+	// 	"Merci beaucoup !",
+	// 	"À demain !",
+	// }
 	sentences := []string{
-		"Bonjour, comment allez-vous ?",
-		"Je voudrais un café s'il vous plaît.",
-		"Où se trouve la gare la plus proche ?",
-		"Combien ça coûte ?",
-		"Je ne comprends pas.",
-		"Quel temps fait-il aujourd'hui ?",
-		"Je suis perdu.",
-		"Pouvez-vous m'aider ?",
-		"Merci beaucoup !",
-		"À demain !",
+		"Je cherchai à grouper ces lettres de manière à former des mots.",
+		"Viennent-ils du ciel ou de l'océan?",
 	}
 
 	totalScore := 0
@@ -111,16 +115,25 @@ func main() {
 		content := apiResp.Choices[0].Message.Content
 
 		// Parse score
+		// Parse score
 		var score int
 		scoreFound := false
-		if idx := strings.Index(content, "SCORE: "); idx != -1 {
-			scoreStr := content[idx+7:]
-			if endIdx := strings.Index(scoreStr, "\n"); endIdx != -1 {
+
+		// Make parsing case-insensitive and more flexible
+		// Make parsing case-insensitive and strip markdown
+		contentUpper := strings.ToUpper(content)
+		if idx := strings.Index(contentUpper, "SCORE"); idx != -1 {
+			scoreStr := content[idx+5:] // "SCORE" is 5 characters
+			// Strip common punctuation and markdown
+			scoreStr = strings.TrimLeft(scoreStr, ":*_ \t")
+			if endIdx := strings.IndexAny(scoreStr, "\n/"); endIdx != -1 {
 				scoreStr = scoreStr[:endIdx]
 			}
-			fmt.Sscanf(scoreStr, "%d", &score)
-			totalScore += score
-			scoreFound = true
+			scoreStr = strings.TrimSpace(scoreStr)
+			if _, err := fmt.Sscanf(scoreStr, "%d", &score); err == nil {
+				totalScore += score
+				scoreFound = true
+			}
 		}
 
 		// Determine color based on score
