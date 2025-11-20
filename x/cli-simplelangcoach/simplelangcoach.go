@@ -5,9 +5,18 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"log"
 	"net/http"
 	"os"
 	"strings"
+)
+
+// ANSI color codes
+const (
+	ColorReset  = "\033[0m"
+	ColorGreen  = "\033[32m"
+	ColorYellow = "\033[33m"
+	ColorRed    = "\033[31m"
 )
 
 // OpenAI-compatible API request/response structs
@@ -30,6 +39,15 @@ type ChatResponse struct {
 }
 
 func main() {
+	// Get Ollama host from environment variable
+	ollamaHost := os.Getenv("OLLAMA_HOST")
+	if ollamaHost == "" {
+		ollamaHost = "http://localhost:11434" // Default if not set
+	}
+	apiURL := ollamaHost + "/v1/chat/completions"
+
+	fmt.Printf("Using Ollama API at: %s\n", apiURL)
+
 	// French sentences to translate (10-20 examples)
 	sentences := []string{
 		"Bonjour, comment allez-vous ?",
@@ -72,14 +90,16 @@ func main() {
 			},
 		}
 
-		// Send to local LLM (adjust URL to your setup)
+		// Send to local LLM using OLLAMA_HOST
 		jsonData, _ := json.Marshal(requestBody)
-		resp, err := client.Post("http://chiba:11434/v1/chat/completions",
-			"application/json", bytes.NewBuffer(jsonData))
+		resp, err := client.Post(apiURL, "application/json", bytes.NewBuffer(jsonData))
 
 		if err != nil {
-			fmt.Printf("API error: %v\n", err)
+			fmt.Printf("%sAPI error: %v%s\n", ColorRed, err, ColorReset)
 			continue
+		}
+		if resp.StatusCode != http.StatusOK {
+			log.Fatalf("http: %v", resp.StatusCode)
 		}
 
 		// Parse response
@@ -89,19 +109,51 @@ func main() {
 
 		// Extract score and feedback
 		content := apiResp.Choices[0].Message.Content
-		fmt.Printf("\n%s\n", content)
 
-		// Parse score (simple implementation)
-		if strings.Contains(content, "SCORE: ") {
-			scoreStr := strings.Split(content, "SCORE: ")[1]
-			scoreStr = strings.Split(scoreStr, "\n")[0]
-			var score int
+		// Parse score
+		var score int
+		scoreFound := false
+		if idx := strings.Index(content, "SCORE: "); idx != -1 {
+			scoreStr := content[idx+7:]
+			if endIdx := strings.Index(scoreStr, "\n"); endIdx != -1 {
+				scoreStr = scoreStr[:endIdx]
+			}
 			fmt.Sscanf(scoreStr, "%d", &score)
 			totalScore += score
+			scoreFound = true
 		}
+
+		// Determine color based on score
+		var colorPrefix string
+		if scoreFound {
+			switch {
+			case score >= 8:
+				colorPrefix = ColorGreen
+			case score >= 5:
+				colorPrefix = ColorYellow
+			default:
+				colorPrefix = ColorRed
+			}
+		} else {
+			colorPrefix = "\033[37m" // White if score not found
+		}
+
+		// Print colored feedback
+		fmt.Printf("\n%s%s%s\n", colorPrefix, content, ColorReset)
 	}
 
 	// Final score
-	fmt.Printf("\n=== Session Complete ===\nYour average score: %.1f/10\n",
-		float64(totalScore)/float64(len(sentences)))
+	avgScore := float64(totalScore) / float64(len(sentences))
+	var finalColor string
+	switch {
+	case avgScore >= 8:
+		finalColor = ColorGreen
+	case avgScore >= 5:
+		finalColor = ColorYellow
+	default:
+		finalColor = ColorRed
+	}
+
+	fmt.Printf("\n%s=== Session Complete ===%s\nYour average score: %s%.1f/10%s\n",
+		finalColor, ColorReset, finalColor, avgScore, ColorReset)
 }
