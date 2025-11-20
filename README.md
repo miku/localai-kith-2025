@@ -32,12 +32,27 @@ Join me in my time machine: [mmz-halle.de](http://web.archive.org/web/2025000000
 
 > [2011-11-09](https://web.archive.org/web/20111109214107/http://www.mmz-halle.de/)
 
-### Digitized material
+#### Digitized books
 
-![](static/ia/screenshot-2025-11-19-170224.png)
+[![](static/ia/screenshot-2025-11-19-170224.png)](https://archive.org/details/diehallischensc00anhagoog/page/n7/mode/2up)
 
+#### Classic games
 
-> Services, [digitization projects](https://digitization.archive.org/projects/)
+Lemonade Stand (1979)
+
+[![](static/ia/screenshot-2025-11-19-174622.png)](https://archive.org/details/Lemonade_Stand_1979_Apple)
+
+#### Image collections
+
+[![](static/ia/screenshot-2025-11-19-174838.png)](https://archive.org/details/solarsystemcollection)
+
+#### Scholarly material
+
+[![](static/ia/screenshot-2025-11-20-023000.png)](https://en.wikipedia.org/wiki/Internet_Archive_Scholar)
+
+#### Services
+
+> We also provide services around [archiving](https://archive-it.org/) and [digitization projects](https://digitization.archive.org/projects/).
 
 ----
 
