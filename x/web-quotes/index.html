@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Rotating Text</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+
+			/* Background image */
+			background-image: url('halle.jpg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+        }
+
+        #text-container {
+            color: white;
+			font-weight: bold;
+            text-align: center;
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+            min-height: 1em;
+            padding: 2rem;
+            max-width: 90vw;
+
+    /* Blur background behind text */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    /* Optional: add slight dark overlay for extra contrast */
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+
+        }
+        .rainbow {
+            background: linear-gradient(
+                90deg,
+                #ff0000,
+                #ff8000,
+                #ffff00,
+                #00ff00,
+                #00ffff,
+                #0080ff,
+                #8000ff
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="text-container"></div>
+    <script>
+        // Static list of sentences
+        const sentences = [
+
+"Also echte Musik von KI-Musik.",
+"Dann sollte die KI jeweils die Person bewerten, die den Text geschrieben hatte.",
+"Ja, wobei man auch sagen muss, die KI-Texte werden wirklich immer besser darin, die werden besser auch uns zu imitieren.",
+"Denn wir müssen uns darüber klar sein, wenn so ein Roboter mit künstlicher Intelligenz ausgestattet wird, dann bekommt KI ja quasi einen Körper und könnte theoretisch eigenständig alles Mögliche damit machen.",
+"Und das könnte sich irgendwann auch auf uns Menschen auswirken, weil im schlimmsten Fall fangen wir bald an, die Stile von KIs zu kopieren und dann verlieren wir unsere sprachliche Einzigartigkeit.",
+"Das soll in Zukunft stärker von KI gemacht werden.",
+"Vor allen Dingen, wenn es um Menschen geht, die in persönlichen Krisen sind und sich dann an eine KI wenden.",
+"Mein Beispiel, KI wiederholt total gerne, um einen Punkt zu machen.",
+"Das Landgericht München sagt, OpenAI darf Songtexte nicht einfach so zum Training von KI nutzen, sondern muss Lizenzgebühren zahlen.",
+"Doch die KI-Firma hat schon gesagt, dass sie darüber nachdenkt, gegen das Urteil Widerspruch einzulegen.",
+"Mithilfe einer KI hat das Team aus dem Material rund 200.000 kürzere Clips mit Handgesten erstellt und sie abgeglichen mit der Reaktion des Publikums, zum Beispiel Likes unterm Video.",
+"Und bei allen KIs sollten Userinnen sowieso immer abchecken, wie wurden sie entwickelt und mit welchen Daten werden sie gefüttert.",
+"Das Landgericht München sagt, OpenAI darf Songtexte nicht einfach so zum Training von KI nutzen, sondern muss Lizenzgebühren zahlen.",
+"Die Macher der KI-Band haben das ganz sarkastisch, sie seien davon inspiriert gewesen, genannt so.",
+"KI-Systeme haben Vorurteile gegenüber Dialekten.",
+"Weil wir in Zukunft immer häufiger KI nutzen werden, fordert der Digitalverband Bitcom, dass in Deutschland in den nächsten Jahren mehr Rechenzentren gebaut werden.",
+"Die EU-Kommission will auch weitere Digitalregeln ändern und zum Beispiel das europäische KI-Gesetz abschwächen.",
+"Also mittlerweile verweisen ChatGPT und andere KIs bei der Anfrage nach Liedtext atemlos oder so auf das Urheberrecht und auf lizenzierte Lyrics-Webseiten.",
+"Erstaunlich fand ich, dass menschliche Texte meist kürzer sind und mit weniger verschachtelten Sätzen als KI-Texte.",
+"Das Gericht ist im Großen der Argumentation der Gemare gefolgt, dass das KI-Training mit den Songtexten ein unerlaubtes Kopieren ist.",
+"Was passiert, wenn Roboter mit KI ausgestattet werden?",
+"Gleichzeitig befürchten manche Analysten, dass sich das nicht lohnt, weil KI-Programme möglicherweise nicht so viel Geld einspielen.",
+"Damit sind zwar weiterhin nicht alle Sterne der Galaxis erfasst, aber die Forschenden haben ein KI-Modell, das das grundsätzlich möglich machen könnte und vielleicht auch bei der Klima-Wetter- oder Ozeanforschung helfen könnte.",
+"Und vielleicht noch eine letzte wichtige Erkenntnis, zwar werden KI-Texte scheinbar immer menschlicher, aber die unterscheiden sich untereinander nicht wirklich voneinander.",
+"Erstaunlich fand ich, dass menschliche Texte meist kürzer sind und mit weniger Verschachtelt.elten Sätzen als KI-Texte.",
+"Und bei dieser Band stellte es sich dann heraus, dass das eben alles KI war und der angebliche Pressesprecher der Band war quasi derjenige, der sich den ganzen Hoax ausgedacht hat.",
+"Wenn KI-Systeme zum Beispiel darauf ausgelegt sein, Nutzer in möglichst lange zu binden, dann würden Betroffene eventuell eben keine professionellen menschlichen Hilfsangebote in Anspruch nehmen.",
+"Der Ansatz des Teams im Fachmagazin PNAS läuft über KI.",
+"Es gibt also KI-Technologien, die für Nachhaltigkeit sorgen und eben auch für Energiesparen sorgen.",
+"Also digitale Astrologie ist total im Kommen und da spielt auch KI nochmal eine Rolle.",
+"Auch schön, dass das KI ist.",
+"Sie ist weltweit die erste Verwertungsgesellschaft, die gegen einen KI-Anbieter klagt.",
+"KIs haben Vorurteile gegenüber Dialekten.",
+"Das ist der Sound von Deutschland undschland von Nova Ich habe einen Kumpel, der inzwischen wirklich ziemlich viele seiner E-Mails von der KI schreibt.",
+"Und wenn ihr jetzt rausfinden wollt, wer dann wirklich Autor oder Autorin ist, also Mensch oder KI, dann red euch, Karina, schaut euch mal die Wortwahl ganz genau an.",
+"Heißt, Deepfakes von fremden Menschen, Stimmklone mit KI und Ähnliches dürften nicht mehr einfach so erstellt und veröffentlicht werden.",
+"Fast eine halbe Million Texte von Menschen und KI waren es insgesamt allerdings alle englischsprachig und dann haben sie so eine Art Profil erstellt, um zu sagen, okay, menschliche und KI-generierte Texte, die macht das und das aus und dann könnte man zum Beispiel in Zukunft auch für so Automatisierung von Erkennungen zum Beispiel nutzen.",
+"Jetzt kommt Katrin Sieger mit den Deutschlands-Nova-Wissensnachrichten und dem Zusammenhang zwischen KI-Modellen und Dialekten.",
+"Und ich glaube, da müssen wir eben auch daran arbeiten, uns genau zu überlegen, wo wollen wir KI einsetzen und wie wollen wir einsetzen und mit welchem Strom soll sie betrieben werden.",
+"Also die KIs passen sich quasi aneinander an.",
+"Mit KI sollen solche Inhalte schneller gefunden und gecheckt werden.",
+"Aber auch Suchmaschinen und KII sind nicht so neutral, wie man hoffen könnte.",
+"Fast eine halbe Million Texte von Menschen und KI waren es insgesamt, allerdings alle englischsprachig.",
+"Und dann haben sie so eine Art Profil erstellt, um zu sagen, okay, menschliche und KI-generierte Texte, die macht das und das aus.",
+"Dann sollte die KI jeweils die Person bewerten, die den Text geschrieben hatte.",
+"KI-Systeme haben Vorurteile gegenüber Dialekten.",
+"Bis vor zwei Jahren hat OpenAI seine KIs noch exklusiv in den Rechenzentren von Microsoft entwickelt.",
+"Unsere Reporterin Fanny Kniestet war das über einen KI-Chat-Bot der Betroffenen von Gewalt in Partnerschaften.",
+"Andrei Wolf arbeitet als Fact-Checker und überprüft, ob Videos KI generiert oder echt sind.",
+"Die Gewerkschaft Verdi kritisiert, dass KI problematische Inhalte nicht so gut einschätzen kann wie Menschen.",
+"Ich habe nämlich auch gehört hier so KI-mäßig, da gibt es ja dieses Gesetz, AI-Act, haben ja auch alle draufgeguckt, dass die EU das verabschiedet hat.",
+"Und die waren eben so inspiriert, wie man eben sein kann als KI.",
+"Also wenn du zum Beispiel ein Foto hochlädst und daran kann man irgendwie deine Religion oder Sexualität ableiten, dann dürfen KIs das auch zum Training benutzen.",
+"Denn dass es sowohl eine Bedrohung für echte Artists ist, dass aber auch, dass demokratiegefährdende Inhalte mit KI vor allem auch an junge Leute gebracht werden sollen, das habe sich ja schon länger abgezeichnet.",
+"KI ruiniert das Klima, oder?",
+"Bei Reddit wirken wir Menschen auch immer noch menschlicher als KI, das finde ich beruhigend.",
+"Auf jeden Fall hat die KI-Band die richtige echte Band bei den Streaming-Diensten in den Aufrufen überholt.",
+"Ich rede aber mit unserer Tech-Reporterin Karina Schröder mal darüber, weil auf der anderen Seite, Karina, ist es wirklich eine gute Idee, jetzt KIs, die, ich sage mal, schon fehlerhaft und voreingenommen sind, da reden wir immer wieder darüber, in Roboter zu stecken.",
+"Das kann bei Bewerbungen zum Problem werden, sagen die Forschenden, denn in Auswahlverfahren werden immer öfter KIs eingesetzt.",
+"Weil wir in Zukunft immer häufiger KI nutzen werden, fordert der Digitalverband Bitcom, dass in Deutschland in den nächsten Jahren mehr Rechenzentren gebaut werden.",
+"Das Problem sind aber die oft unbekannten Betreiber von KI-Seiten.",
+"Dann sollte die KI jeweils die Person bewerten, die den Text geschrieben hatte.",
+"Demnach könnte das Bruttoinlandsprodukt durch KI um 0,8 Prozentpunkte pro Jahr steigen.",
+"Ein britisch-amerikanisches Forschungsteam hat dazu über eine Million Bilder aus Suchmaschinen, Videos von Portalen wie YouTube, Texte und KI-Antworten ausgewertet.",
+"Und dort beschäftigen Sie sich, Herr Burchardt, auch viel mit nachhaltiger KI.",
+"Und vielleicht noch eine letzte wichtige Erkenntnis, zwar werden KI Texte scheinbar immer menschlicher, aber die unterscheiden sich untereinander nicht wirklich voneinander.",
+"Und wenn ein KI-Chatbot typische Lebensläufe für verschiedene Berufsgruppen verfassen sollte, waren Frauen im Schnitt 1,6 Jahre jünger.",
+"Aber in einem Video, das generiert ist, also was eine KI generiert, können Pixelfehler entstehen, an welcher Stelle auch immer, allein aufgrund der Bewegung.",
+"Mit KI sollen solche Inhalte schneller gefunden und gecheckt werden.",
+"Das Landgericht München sagt, OpenAI darf Songtexte nicht einfach so zum Training von KI nutzen, sondern muss Lizenzgebühren zahlen.",
+"dass OpenAI Lizenzgebühren zahlen muss, wenn Songtexte zum KI-Training genutzt werden.",
+"Jetzt gibt es so eine Renaissance der Gasverbrennung, weil die Datenzentren für die KI so große Energiefresser sind.",
+"Und außerdem bezweifeln sie, dass KI-Systeme überhaupt die Kompetenz haben, akute Krisensituationen angemessen einzuschätzen.",
+"Die markieren KI-Songs und spielen sie auch nicht automatisiert über ihren Algorithmus aus.",
+"Digitalminister Carsten Bildberger sieht KI als Chance für Europa, um den technologischen Rückstand auf die USA und China aufzuholen.",
+"Und dann hat sich halt herausgestellt, dass es von einem Profil ist, der KI arbeiten macht.",
+"KI ist extrem rechnerhungrig.",
+"Das kann bei Bewerbungen zum Problem werden, sagen die Forschenden, denn in Auswahlverfahren werden immer öfter KIs eingesetzt.",
+"Offenbar bevorzugte die KI auch männliche Bewerber und empfahl eher, sie einzustellen.",
+"Geplant ist eine sogenannte KI-Fabrik in München, die etwa eine Milliarde Euro kosten wird.",
+"Was daran liegt, dass typischerweise KIs mit anderen Texten von KIs trainiert werden.",
+"Und wir starten gleich mit dem ersten KI-Song, der gerade in den USA... den US Billboard Charts aber ordentlich für Furore sorgt.",
+"Sie empfehlen, dass das bei der Entwicklung von KI beachtet wird.",
+"Und bisher war es so, dass Firmen, die nicht einfach zum Training ihrer KI nutzen durften, also nicht ohne konkrete Einwilligung, der Omnibus würde das aber möglich machen, dass Tech-Firmen keine Einwilligung mehr brauchen, weil sie ein berechtigtes Interesse haben und das geltend machen können.",
+"Die eine Frage ist, wie kann man KI für nachhaltiges Leben einsetzen?",
+"Sie fordern KI-Sprachmodelle so zu programmieren, dass Dialekte nicht benachteiligt werden, sondern Vielfalt respektieren.",
+"Eigentlich muss man KI ja erst einmal mit Infos füttern, damit die Ergebnisse ausspuckt.",
+"Dieser Song macht gerade Schlagzeilen, denn er ist auf Platz 1 der amerikanischen Country Charts und damit ist es das erste Mal, dass in den USA ein KI-Song auf Platz 1 ist.",
+"Offenbar bevorzugte die KI auch männliche Bewerber und empfahl sie.",
+"Und ich sage es vorab schon mal, so ein KI-Atlant, den willst du nicht haben, egal wie schön du das Bild gezeichnet hast, denn es geht bis zur Androhung von Messergewalt.",
+"Das wird schon immer schwerer, weil die KI natürlich auch immer besser wird.",
+"Auf Spotify in den Niederlanden trenden gerade KI-generierte Lieder mit rassistischen und gewaltverherrlichenden Texten.",
+"Die Forschenden sagen, Wirtschaft und Gesellschaft müssten bereit sein, sich anzupassen, um die Chancen durch KI auch nutzen zu können.",
+"Mithilfe einer KI hat das Team aus dem Material rund 200.000 kürzere Clips mit Handgesten erstellt und sie abgeglichen mit der Reaktion des Publikums, zum Beispiel Likes unterm Video.",
+"Und die haben gesagt, wir haben da eine KI-Band, die wurde mit unserem Material trainiert.",
+"Eine KI, die spontan Kategorien bilden kann, bestärkt auch eine Strömung in der Sprachwissenschaft, die kognitive Linguistik, die besagt, dass Sprache erlernt wird.",
+"Es gibt ja auch die begründete Annahme, dass... dass KI viele Prozesse energieeffizienter macht, als die heute sind.",
+"Unternehmen sollen damit Zugang zu mehr Daten bekommen, um KI-Modelle zu entwickeln.",
+"Und das liegt daran, dass das Internet natürlich voll ist mit KI-Texten und wir Menschen dann auch wieder die KIs mit KI-Texten füllen.",
+"Die EU-Kommission will auch weitere Digitalregeln ändern und zum Beispiel das europäische KI-Gesetz abschwächen.",
+"Und sowas hat die Gema 2024 auch den großen KI-Firmen angeboten, also die Inhalte, auch die Musik übrigens, eben legal gegen Gebühr in das Training ihrer KI-Modelle einzubeziehen.",
+"Also da sieht man bei diesen KI-Bands auch immer, dass die wirklich krass viel weniger Listener haben als bei Spotify.",
+"Sie fordern, KI-Sprachmodelle so zu programmieren, dass Dialekte nicht benachteiligt werden, sondern Vielfalt respektieren, denn aus ihrer Sicht sind Dialekte ein wichtiger Teil der kulturellen Identität.",
+"Sie fordern KI-Sprachmodelle so zu programmieren, dass Dialekte nicht benachteiligt werden, sondern Vielfalt respektieren, denn aus ihrer Sicht sind Dialekte ein wichtiger Teil der kulturellen Identität.",
+"Dann sollte die KI jeweils die Person bewerten, die den Text geschrieben hatte.",
+"Aber das bedeutet natürlich auch, die müssen nicht mehr so viel preisgeben über ihre KI zum Beispiel.",
+"Das sind aber nicht einfach nur irgendwelche belanglosen KI-Songs.",
+"Aber das ist alles nur KI.",
+"Eine KI, die spontan Kategorien bilden kann, bestärkt auch eine Strömung in der Sprachwissenschaft, die kognitive Linguistik, die besagt, dass Sprache erlernt wird.",
+"Genau, die Forschenden haben Texte anhand von linguistischen Merkmalen analysiert, also um faktenbasiert sagen zu können, worin sich Texte von Menschen und KI eigentlich wirklich noch unterscheiden.",
+"Hier kommt jetzt Musik, die ist definitiv nicht von der KI geschrieben und der Text auch nicht, sondern die stammt von Nemo aus der Schweiz.",
+"Es gibt aber ein TikTok-Account dieser KI-Band, der auch schon 200k Follower hat.",
+"Die haben gesagt, die KI gäbe diese Texte im Rahmen einer, ich zitiere das mal sequenziell analytischen, iterativ probabilistischen Synthese aus.",
+"Das sagt der plastische Chirurg Helge Jens, denn das, was er da gezeigt bekommt, sind zum Teil KI-generierte Bilder, die einfach ja unrealistisch sind.",
+"André Wolf, der hat uns das mal mit einem Beispiel erklärt, wie die KI Bilder immer wieder neu generieren muss.",
+"die ersten KI-Browser.",
+"Die will Lizenzgebühren, wenn OpenAI Songtexte zum Training von KI nutzt.",
+"Und das könnte sich irgendwann auch auf uns Menschen auswirken, weil im schlimmsten Fall fangen wir bald an, die Stile von KIs zu kopieren und dann verlieren wir unsere sprachliche Einzigartigkeit.",
+"Die KI würde eher so platz sagen, ja, der Himmel war halt dunkel und dann gab es da einen Helmblitz.",
+"Die Entwicklung führender KI-Programme verbraucht Unmengen an Rechenleistungen.",
+"Die Daten der Münchner KI Cloud sollen nach Angaben von Hüttges vollständig in Deutschland verbleiben.",
+"Laut den Studienautoren müssten diese KI-Roboter genauso strengen Sicherheitsstandards unterliegen wie jetzt Medizinprodukte oder Arzneimittel.",
+"Vielleicht auch eher noch hoffen, dass menschliche Texte doch noch ein bisschen vielfältiger sind als die von KIs.",
+"Wir werden halt schnell generiert und bei Spotify einfach über irgendwelche Playlists oder den Algorithmus den Leuten dann ausgespielt und kriegen dadurch super schnell super viele Streams und super, super viele Hörer in und machen echten Musikern das Leben halt richtig schwer, denn so schnell wie eine KI kann halt kein Mensch ständig neuen musikalischen Output produzieren.",
+"Ja, weil es Bilder sind, wo Filter drüber liegen oder die KI erstellt hat oder zumindest mit KI bearbeitet worden sind, das ist dann einfach unrealistisch.",
+"Da sind nämlich gerade rechtsextreme KI-Songs richtig weit oben in den Streaming-Charts.",
+"Die KI-Chatbots berechnen eigentlich nur, was statistisch passt und nicht, ob das stimmt.",
+"In den Niederlanden, das ist allerdings gerade noch ein bisschen schlimmer, denn da schaffen es gerade auch einige KI-Songs ziemlich weit nach oben in den Streaming-Charts.",
+"Wenn ihr einen Text lesen, fragt ihr euch dann, hat ihn jetzt wirklich ein Mensch geschrieben oder ist er von der KI?",
+"Alle haben jetzt immer ihr Smartphone dabei, sie kennen das, man sitzt mit Freunden gemeinsam in einem Restaurant, einer hat irgendwie eine Frage, wie hoch ist eigentlich der Eiffelturm, zack, zücken fünf Leute das Handy und stellen dann in Zukunft eine KI-Anfrage.",
+"Also wenn du zum Beispiel ein Foto hochlädst und daran kann man irgendwie deine Religion oder Sexualität ableiten, dann dürfen KIs das auch zum Training benutzen.",
+"Es hat mit KI fast 60.000 davon ausgewertet, mit Reaktionen auf 5 Fitness-Apppps, die weltweit mit am meisten genutzt werden.",
+"Ich kann nicht einmal mit dem kleinen Quecksilber spielen Ich will nicht reden, aber ich kann dich nicht hören Dieser Biss ist kalt, ich fühle mich so gelangweilt Und ich will nicht in der Nähe seines Hoses Lizenzgebühren fällig werden, wenn Songtexte zum Training von KIs wie ChetGPT genutzt werden.",
+"Dass Länder vorne mitspielen bei der KI und gleichzeitig ihre Klimaziele erreichen können, sei magisches Denken, heißt es darin auch.",
+"Dafür hat die KI einen Roman eingelesen, bis auf wenige Stellen.",
+"Doch die KI-Firma hat schon gesagt, dass sie darüber nachdenkt, gegen das Urteil Widerspruch einzulegen.",
+"Die Gema hat gegen die KI-Firma OpenAI geklagt.",
+"Doch die KI-Firma hat schon gesagt, dass sie darüber nachdenkt, gegen das Urteil Widerspruch einzulegen.",
+"Ich habe mit Anne Reinheimer gesprochen, sie ist eine von den Entwicklerinnen vom KI Chatbot Maya, vom Social Startup MyProtectify und sie sagt, was der Chatbot auf jeden Fall nicht macht, ist werten.",
+"Wildberger hat außerdem kritisiert, dass es in der EU zu viele Regulierungen für KI gäbe.",
+"Und dadurch sind dann diese ganzen Artikeltikel entstanden, aber nicht durch irgendwelche Gossipseiten, sondern durch KI-Websites.",
+"Ja, weil es Bilder sind, wo Filter darüber liegen oder die mit KI erstellt worden sind oder zumindest bearbeitet worden sind, ist dann halt eben unrealistisch.",
+"Viele Patientinnen und Patienten merken nämlich nicht, dass sie da komplett bearbeitete, THIS-KI-generierte Bilder mitbringen von Hautbildern oder Gesichtsformen, die Botox gar nicht bewirken kann.",
+"Ich bringe mit, dass wir heute Abend nochmal ein bisschen über KI-Musik sprechen.",
+"Laut einer Analyse des Fachjournals Nature sind Forschungsbeiträge zu KI aktuell generell die meistzitierten Paper.",
+"dass Texte mit KI geschrieben sind, weil es so komisch floskelig wird.",
+"Auch erst, dass das überhaupt KI ist, ist erst rausgekommen, als ein Journalist mal geschaut hat, wer eigentlich diese Bandbreaking Rust ist, die da irgendwie in den Charts auf einmal so abgeht und hat dann eben herausgefunden, ach so, es ist ein Computer, das ist ja auch mal gut zu wissen.",
+"Naja, und obwohl Streaming-Dienste wie zum Beispiel eben auch Spotify immer wieder erzählen, sie würden KI-Artis aussortieren, kann das ja so jetzt auch nicht stimmen.",
+"Dafür hat die KI ein Roman eingelesen, bis auf wenige Stellen.",
+"Die KI-Modelle, die auch hinter den bekannten Chatbots stecken, die sollen das möglich machen.",
+"Der KI-Gipfel, C. Der Stahl-Gipfel.",
+"Das kann bei Bewerbungen zum Problem werden, sagen die Forschenden, denn in Auswahlverfahren werden immer häufiger KIs eingesetzt.",
+"Viele dieser KI-Seiten nutzen die gleichen Server.",
+"Also die KIs passen sich quasi aneinander an.",
+"Weil wir in Zukunft immer häufiger KI nutzen werden, fordert der Digitalverband Bitcom, dass in Deutschland in den nächsten Jahren mehr Rechenzentren gebaut werden.",
+"Dann denkt ihr, KI ist am Start.",
+"Und bisher war es so, dass Firmen, die nicht einfach zum Training ihrer KI nutzen durften, also nicht ohne konkrete Einwilligung, der Omnibus würde das aber möglich machen, dass Tech-Firmen keine Einwilligung mehr brauchen, weil sie ein berechtigtes Interesse haben und das geltend machen können.",
+"Gefühle im Gegensatz zur KI.",
+"Die KI würde eher so platz sagen, ja, der Himmel war halt dunkel und dann gab es da einen Helmblitz.",
+"Dann haben die Forschenden aus den unbekannten Textpassagen Sätze genommen und der KI neun Wörter vorgegeben, das zehnte musste sie selbst hinzufügen.",
+"Sie fordern, KI-Sprachmodelle so zu programmieren, dass Dialekte nicht benachteiligt werden, sondern Vielfalt respektieren.",
+"Würde ich dann wirklich erkennen, dass diese Mail jetzt von einer KI stammt und nicht vom Menschen?",
+"Dann sollte die KI jeweils die Person bewerten, die den Text geschrieben hatte.",
+"Unterm Strich nochmal, damit wir das ein bisschen für unsere individuelle Ebene kleinkriegen, was empfehlen Sie Menschen, die sagen, ich will KI benutzen, aber ich möchte dabei möglichst wenig fossile Energie gebrauchen.",
+"Und dann hat sich halt herausgestellt, dass es von einem Profil ist, der KI-Arbeiten macht.",
+"Okay, das klingt ja aber erstmal realistischer, als jetzt eine Anzeige gegen jede einzelne KI-Website zu machen.",
+"Mein Beispiel, KI wiederholt total gerne, um einen Punkt zu machen.",
+"Die ist ja, das ist nicht ganz neu, eine Gefahr natürlich für echte Musikerinnen, weil KI natürlich viel schneller Songs schreiben kann als echte Musikerinnen.",
+"Mein Beispiel, KI wiederholt total gerne, um einen Punkt zu machen.",
+"Laut einer Analyse des Fachzeurnals Nature sind Forschungsbeiträge zu KI aktuell generell die am häufigsten zitierten Paper.",
+"Die Fakes, also wie erkennen wir, ob Videos KI generiert sind oder echt sind aus Social Media?",
+"Und wenn es aber so um formelhafte Texte geht, sowas, was nach Regeln in Anführungsstrichen funktioniert, Wikipedia, wissenschaftliche Texte, da wird es schon schwerer, da kann die KI gut mithalten.",
+"Ja, wobei man auch sagen muss, die KI-Texte werden wirklich immer besser darin, die werden besser auch uns zu imitieren.",
+"Aber es so wirklich immer zweifelsfrei sagen zu können, ob da KI im Spiel war.",
+"Das Landgericht München sagt, OpenAI darf Songtexte nicht einfach so zum Training von KI nutzen, sondern muss Lizenzgebühren zahlen.",
+"Und KI wird also immer weiter trainiert heutzutage vor allem mit KI-Texten.",
+"Und die zweite Frage ist aber eben immer, wie kann KI selber Energie sparen?",
+"Auf Spotify in den Niederlanden trenden gerade KI-generierte Lieder mit rassistischen und gewaltverherrlichenden Texten.",
+"Forscher der Uni Erlang-Nürnberg zeigen jetzt, dass ihr KI-Modell menschliche Sprache herleiten kann, ohne vorher mit Infos über Grammatik oder Wortklassen gefüttert zu werden.",
+"Das kann bei Bewerbungen zum Problem werden, sagen die Forschenden, denn in Auswahlverfahren werden immer öfter KIs eingesetzt.",
+"In Autenth Forschenden hat die KI in einem bemerkenswerten Anteil der Fälle richtig gelegen und das exakte Wort vorhergesagt.",
+"Zum Beispiel hatten wir letztens ein Beispiel, da haben wir einer Bäckereikette geholfen, Abfall zu vermeiden, indem das KI-System vorhergesehen hat, wie viele Donuts von einer bestimmten Sorte verkauft werden und gebacken werden müssen.",
+"KI also als Energiefresser haben wir bei unseren KI-Suchanfragen irgendwie Einfluss darauf.",
+"Eigentlich muss man KI ja erstmal mit Infos füttern, damit die Ergebnisse ausspuckt.",
+"oder um KI zu trainieren.",
+"KI-Systeme haben Vorurteile gegenüber Dialekten.",
+"Heißt, Deepfakes von fremden Menschen, Stimmklone mit KI oder ähnliches, dürfen nicht mehr einfach so erstellt und veröffentlicht werden.",
+"Ja, und auf Platz 3 ist aktuell auch ein KI-Song.",
+"Unternehmen sollen damit Zugang zu mehr Daten bekommen, um KI-Modelle zu entwickeln.",
+"Tech Riesen suchen dazu nach Alternativen und Google hat jetzt einen Plan für ein KI-Rechenzentrum im Weltraum vorgestellt.",
+"Dann haben die Forschenden aus den unbekannten Textpassagen Sätze genommen und der KI neun Wörter vorgegeben.",
+"Laut den Forschenden hat die KI in einem bemerkenswerten Anteil der Fälle richtig gelegen und das exakte Wort vorhergesagt.",
+"Der US-KI-Konzern muss deswegen jetzt Schadenersatz zahlen, wenn das Urteil rechtskräftig wird.",
+"Also die dramatischsten Folgen, wenn alle Gerichte so entscheiden würden, dann müssten eigentlich die KI-Firmen ihre trainierten Modelle löschen und in die Tonne kloppen.",
+"Die Frage, welche Signalwirkung das haben kann und eben auch die Technik hinter solchen Large Language Models, also diesen KIs wie ChatGPT oder Gemini oder wie sie alle heißen.",
+"Naja, im Endkundengeschäft, da wo wir uns jetzt bei den amerikanischen Systemen andocken, wo man uns bei der Suche eben heute immer schon KI-Ergebnisse mundgerecht präsentiert, da haben wir natürlich wenig Chancen, außer politisch auf Transparenz zu drängen und zu sagen, das muss eben angegeben werden wie bei anderen Dingen auch.",
+"Bei Reddit wirken wir Menschen auch immer noch menschlicher als KI, das finde ich beruhigend.",
+"Und ehrlich gesagt, das dürft auch gar nicht so schwer sein, denn für das KI-Training wurde ja im Prinzip schon das ganze Internet abgegrast, viele Bücher und so benutzt.",
+"Das Gericht ist im Großen der Argumentation der GEMA gefolgt, dass das KI-Training mit den Songtexten ein unerlaubtes Kopieren ist.",
+"Irgendeiner muss ja die KI dann doch programmieren bzw.",
+"Die haben sich angeschaut, Konstanz muss man glaube ich genauerweise sagen, die haben sich angeschaut, ob menschliche und KI-generierte Texte sich noch großartig unterscheiden.",
+"Das ist er tatsächlich schon seit drei Wochen, aber irgendwie ist das erstmal keim so richtig aufgefallen, dass das KI-Musik ist, bis ein Reporter eines US Country Magazines auf eine Liste von Billboard, also denen, die die Charts immer veröffentlichen, der hat so eine Liste von denen gesehen und da waren eben KI-generierte Songs aufgelistet und er dachte so, hey, Moment mal, also.",
+"Und man kann auch die Unternehmen kontaktieren, auf deren Servern die Seiten gespeichert sind, also die KI-Seiten.",
+"Mit dem Geld sollen laut dem Deutschlandschef von Google mehr KI-Infrastruktur und Cloud-Kapazitäten geschaffen werden.",
+"Forscher der Uni Erlang-Nürnberg zeigen jetzt, dass ihr KI-Modell menschliche Sprache herleiten kann, ohne vorher mit Infos über Grammatik oder Wortklassen gefüttert zu werden.",
+"Und ehrlich gesagt, das dürfte auch gar nicht so schwer sein, denn für das KI-Training wurde ja im Prinzip schon das ganze Internet abgegrast, viele Bücher und so benutzt.",
+"Was bedeutet das denn, wenn deine KI inspiriert ist von der Band?",
+"Laut einer Analyse vom Fachjournal Nature sind Forschungsbeiträge zu KI aktuell generell die meistzitierten Papers.",
+"Und KI wird also immer weiter trainiert, vor allem mit KI-Texten.",
+"Carina Schröder, unsere Tech-Reporterin bei der Untersuchung der Universität Konstanz zur Sprache von Mensch und KI.",
+"Generell sollte Spotify laut Scherer anfangen, KI-generierte Songs zu kennzeichnen.",
+"Die Forschenden sehen darin ein Problem, weil KI-Systeme immer mehr auch von Firmen, Behörden und Regierungen eingesetzt werden, kann das Eignützige Entscheiden negative Folgen für die Gesellschaft haben.",
+"Auch Deutschland und Frankreich sowie US-Tech-Konzerne finden, dass die KI-Regeln in der EU da aktuell zu streng und bürokratisch sind.",
+"Er fordert Spotify auf, laut Shira anfangen, KI-generierte Songs zu kennzeichnen.",
+"Die Forscher sehen darin ein Problem, weil KI-Systeme immer mehr auch von Firmen, Behörden und Regierungen eingesetzt werden, kann das Eigennützige entscheiden negative Folgen für die Gesellschaft haben.",
+"Und die KIs haben die beiden Begriffe dann einfach gematcht und sich überlegt, das ist wohl die Antwort auf die Frage, wer ist Contracas Freundin?",
+"Vor allem die neueren Modelle kopieren unseren Stil ganz gut und das sieht man auch an den Entwicklungen der betrachteten KI-Modelle.",
+"KI-Systeme haben Vorurteile gegenüber Dialekten.",
+"Wo haben KIs, also vor allem auch diese Large Language Models wie ChatGPT eben die Daten her, die sie ausspucken, die sie benutzen, um ja vermeintlich was Neues zu kreieren.",
+"Vor allem die neueren Modelle kopieren unseren Stil ganz gut und das sieht man auch an den Entwicklungen der betrachteten KI-Modelle.",
+"Die Daten der Münchner KI Cloud sollen nach Angaben von Höttkes vollständig in Deutschland verbleiben.",
+"Warum Christoph Börlein deshalb sagt, dass das zum Beispiel in der Liebe ziemlich schädlich sein kann, sich da auf die Astrologie zu verlassen und wie KI in der Astrologie auch schon eine Rolle spielt.",
+"Ja, im Moment setzen die großen Firmen darauf, dass es immer so weitergeht, dass der Verbrauch steigen wird, bauen neue Atomkraftwerke oder planen diese, brechen auch mit den Arabischen Emiraten darüber, Öl für KI zu verbrauchen.",
+"Und die Universität Konstanz hat sich das nochmal genauer anschauen wollen, wie menschlich KI-Texte inzwischen sind oder ob es noch erhebliche Unterschiede gibt.",
+"Aber wenn die Leute jetzt anfangen, in ihren Betrieben oder auch in ihrem Verein oder irgendwo selber KI-Systeme zu bauen und die Digitalisierung voranzutreiben, was Eigenentwicklungen zu machen, dann kann man sich ja immer überlegen von Anfang an, wie es ist mit dem Energieverieverbrauch?",
+"Ja gut, das überrascht aber irgendwie auch wenig, weil wir haben halt Gefühle im Gegensatz zur KI.",
+"Da lässt sich KI ja oft gar nicht mehr ausschalten, selbst wenn man sich mit ein paar Links eigentlich begnügen könnte.",
+"Wie menschlich sind KI Texte inzwischen?",
+"Ich habe nämlich auch gehört hier so KI-mäßig, da gibt es ja dieses Gesetz, AI-Act, haben ja auch alle draufgeguckt, dass die EU das verabschiedet hat.",
+"Der US-KI-Konzern muss deswegen jetzt Schadenersatz zahlen, wenn das Urteil rechtskräftig wird.",
+"Ja, und selbst wenn es kein Bild gibt, erreichen oft schon so KI-Bilder und ein paar Leute, die eben dann auch suchen.",
+"Da setzt auch seine Arbeit dann als Profi an, weil André Wolff, der arbeitet mit speziellen Tools, um zu prüfen, ob ein Bild KI generiert ist oder nicht?",
+"Im Norden und Nordwesten kann es etwas nass werden und 14 Grad sind drin.in. Hand aufs Herz, schreibt ihr eure Arbeitsmails manchmal mit KI oder vielleicht sogar schon sowas wie Bewerbung oder Bachelorarbeiten?",
+"Und wenn es aber so um formelhafte Texte geht, sowas, was nach Regeln in Anführungsstrichen funktioniert, Wikipedia, wissenschaftliche Texte, da wird es schon schwerer, da kann die KI gut mithalten.",
+"Ich sollte mir am Anfang immer fragen, brauche ich jetzt wirklich KI oder reicht vielleicht eine normale Suche oder kann ich die Sachen irgendwie auch anders erledigen?",
+"Was ist da jetzt genau anders in diesem Fall von KI?",
+"Wenn wir KI-Fragen stellen und sie dahin lenken, wo wir sie gerne hätten, wie kann ich das energiesparend machen?",
+"Metas-KI-Modell-Lama hat nichts dagegen, die Kreditkartendaten von Menschen zu stehlen und die Wahlappsichten von Personen an Behörden zu melden.",
+"Große KI-Unternehmen investieren gerade hunderte Milliarden Dollar in neue Rechenzentren bzw.",
+"Hinter solchen KI-Websites stehen ja keine wirklichen Redaktionen, bei der man so eine Falschmeldung melden könnte.",
+"Das haben wir wahrscheinlich alle Intos inzwischen, dass wir vorsichtig sein müssen bei allem, was wir so lesen und hören und sehen im Internet wegen KI und so.",
+"Das ist irgendwie nur Fails dieser KI-Robotermodelle.",
+"Ja, wenn ihr jetzt noch mehr Infos haben wollt, wie ihr KI-Texte gut erkennen könnt, dann hört euch doch gerne das ganze Gespräch an.",
+"Das soll aber nicht für mich bedeuten, dass wir keine KI einsetzen wollen, aber eben bedacht.",
+"Für den laufenden Betrieb können die KI-Betreiber so einen Abfragefilter einbauen, dann antworten sie einfach nicht mehr auf die Frage.",
+"Gehst am liebsten mit dir aus, kennst dich mit dir am besten aus, wenn du dich dann nachts berührst und du deine Nähe spürst, wenn du weißt, wie es dir gefällt, wie du es dir machst, dass dir niemand auf irgendjemandem weht, Menschen meinen, das sei traurig, du sagst zu Recht, schau dich doch mal um, zeig mir einen, den du bist, besser geht es mir, besser geht es mir dann nämlich um KI.",
+"Findet Musikproduzent Johann Scherer vor allem, wenn es so wie in den Niederlanden plötzlich rechtsextreme KI-Songs ganz nach oben in die Streaming-Charts schaffen.",
+"Aber das bedeutet natürlich auch, die müssen nicht mehr so viel preisgeben über ihre KI zum Beispiel.",
+"Und das liegt daran, dass das Internet natürlich voll ist mit KI-Texten und wir Menschen dann auch wieder die KIs mit KI-Texten füllen.",
+"Es ist allerdings auch verführerisch, weil es gibt ja jetzt überall, selbst bei Google, bei allen möglichen Browsern gibt es ja KI-Zusammenfassungen, es gibt ja jetzt auch.",
+"Er darf Songtexte nicht einfach so zum Training von KI verwenden.",
+"Und wenn ein KI-Chatboard typische Lebensläufe für verschiedene Berufsgruppen verfassen sollte, waren Frauen im Schnitt 1,6 Jahre jünger als Männer und weniger erfahren.",
+"Sie fordern KI-Sprachmodelle so zu programmieren, dass Dialekte nicht benachteiligt werden, sondern Vielfalt respektieren, denn aus ihrer Sicht sind Dialekte ein wichtiger Teil der kulturellen Identität.",
+"Und zwar indem bei uns neue KI-Systeme und Plattformen entwickelt und nicht nur aus nicht-europäischen Ländern gekauft werden.",
+"Und welche Rolle da auch KI in der Astrologie Nein, nein, aber heute geht es nicht mehr.",
+"Die KI-Websites sind dann also nicht automatisch gelöscht, aber es taucht dann zumindest nicht mehr direkt auf der ersten Seite bei Google auf und somit sehen das dann auch weniger Menschen.",
+"Weltweit wächst die Nachfrage nach KI und dafür braucht es mehr Datenzentren.",
+"Ich würde jetzt mal raten, vielleicht auch eher noch hoffen, dass menschliche Texte doch noch ein bisschen vielfältiger sind als die von KIs.",
+"Aber das ist alles nur KI.",
+"Ja, da ist trotzdem ein bisschen was dran an dieser OpenAI-Argumentation, obwohl die gleichzeitig damit auch wieder demaskieren eigentlich die gängigen Hypes, wie KI funktioniert.",
+"Die Uni Cambridge hat vor kurzem prognostiziert, dass die Big Tech-Branche durch KI binnen 15 Jahren fünfmal so viel Energie verbrauchen wird wie heute.",
+"Spotify sollte KI-generierte Inhalte verbieten oder kennzeichnen.",
+"Die KI würde eher so platz sagen, ja, der Himmel war halt dunkel und dann gab es da einen Helmblitz.",
+"Die Forschenden empfehlen, dass bei der Entwicklung von KI darauf geachtet wird.",
+"Die Folge könnten hohe Kursverluste bei KI-Firmen sein.",
+"Also Fakt ist wirklich so, dieser Ausgabeprompt von ChatGPT und den anderen KIs, der reiht eigentlich Wort für Wort nach statistischen Wahrscheinlichkeiten aneinander.",
+"Da geht es darum, wie KI-Programme grundlegend in Bezug auf das Urheberrecht bewertet werden.",
+"Die Forschenden haben Texte anhand von linguistischen Merkmalen analysiert, also um faktenbasiert sagen zu können, worin sich Texte von Menschen und KI eigentlich wirklich noch unterscheiden.",
+"Aber wie können wir denn ein Gefühl dafür bekommen, wie viel Strom wir zum Beispiel mit so einer KI-Frage beanspruchen oder verbrauchen?",
+"Also haben wir den Punkt geknackt, an dem nicht mehr unterscheidbar ist, ob das Gedicht jetzt von der KI oder von einem Menschen kommt.",
+"Das kann bei Bewerbungen zum Problem werden, sagen die Forschenden, denn in Auswahlverfahren werden immer öfter KIs eingesetzt.",
+"Weil wir in Zukunft immer häufiger KI nutzen werden, fordert der Digitalverband Bitcom, dass in Deutschland in den nächsten Jahren mehr Rechenzentren gebaut werden.",
+"Geplant ist eine sogenannte KI-Fabrik in München, die etwa eine Milliarde Euro kosten wird.",
+        ];
+
+        // Special words to highlight with rainbow effect
+        const specialWords = [
+            "Computer",
+        ];
+
+        // Configuration
+        const baseDuration = 5000; // Base duration in milliseconds
+        const jitterRange = 1000;  // Jitter range in milliseconds
+        const fadeDuration = 1000; // Fade animation duration in milliseconds
+
+        // Font size configuration
+        const maxFontSize = 16;    // rem - for short text
+        const minFontSize = 4;    // rem - for long text
+        const shortTextLength = 15;  // characters
+        const longTextLength = 50;   // characters
+
+        // DOM element
+        const container = document.getElementById('text-container');
+
+        // Current index
+        let currentIndex = 0;
+
+        // Function to get random duration with jitter
+        function getRandomDuration() {
+            const jitter = Math.random() * jitterRange - jitterRange / 2;
+            return baseDuration + jitter;
+        }
+
+        // Function to calculate font size based on text length
+        function calculateFontSize(text) {
+            const length = text.length;
+
+            if (length <= shortTextLength) {
+                return maxFontSize;
+            } else if (length >= longTextLength) {
+                return minFontSize;
+            } else {
+                // Linear interpolation between max and min
+                const ratio = (length - shortTextLength) / (longTextLength - shortTextLength);
+                return maxFontSize - (ratio * (maxFontSize - minFontSize));
+            }
+        }
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+        // Function to highlight special words with rainbow effect
+        function highlightSpecialWords(text) {
+            let result = text;
+
+            specialWords.forEach(word => {
+                // Create a regex that matches the word (case-insensitive, whole word)
+                const regex = new RegExp(`\\b(${word})\\b`, 'gi');
+                result = result.replace(regex, '<span class="rainbow">$1</span>');
+            });
+
+            return result;
+        }
+
+        // Function to update text with fade effect
+        function updateText() {
+            // Fade out
+            container.style.opacity = '0';
+
+            setTimeout(() => {
+                // Update text while invisible
+                const text = sentences[currentIndex];
+                const highlightedText = highlightSpecialWords(text);
+                container.innerHTML = highlightedText;
+
+                // Set font size based on text length
+                const fontSize = calculateFontSize(text);
+                container.style.fontSize = fontSize + 'rem';
+
+                // Fade in
+                container.style.opacity = '1';
+
+                // Move to next sentence
+                currentIndex = (currentIndex + 1) % sentences.length;
+
+                // Schedule next update
+                setTimeout(updateText, getRandomDuration());
+            }, fadeDuration);
+        }
+
+        // Initialize with first sentence
+		shuffleArray(sentences);
+        const initialText = sentences[currentIndex];
+        container.innerHTML = highlightSpecialWords(initialText);
+        container.style.fontSize = calculateFontSize(initialText) + 'rem';
+        currentIndex = 1;
+
+        // Start the rotation after initial display
+        setTimeout(updateText, getRandomDuration());
+    </script>
+</body>
+</html>
