@@ -345,11 +345,11 @@ Multimodal models like qwen3-vl can extract data from documents quite well.
 * [sentences](https://github.com/neurosnap/sentences)
 * grep and turn quotes into website: [kith25](https://golangleipzig.space/kith25/)
 
+![](static/screenshot-2025-11-21-033206.png)
+
 ### Language Learning
 
 > text, coach, [impact on learning](https://link.springer.com/content/pdf/10.1007/s10648-025-10020-8.pdf)
-
-![](static/screenshot-2025-11-21-032633-simplelanguagecoach.png)
 
 * text
 * category
