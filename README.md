@@ -304,6 +304,8 @@ Akin to different "gpt" flavors. In some projects lot of the "IP" lies in the "p
 
 Example: [Automatic-License-Plate-Recognition-using-YOLOv8](https://github.com/Muhammad-Zeerak-Khan/Automatic-License-Plate-Recognition-using-YOLOv8#)
 
+![](static/Automatic-License-Plate-Recognition-using-YOLOv8.gif)
+
 ### Image captioning
 
 Augement image material with textual data: [AI exploration 6](https://github.com/miku/aiexp-25-6)
