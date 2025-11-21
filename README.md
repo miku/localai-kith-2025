@@ -289,17 +289,23 @@ Notes:
 
 Let's try Jan.ai with some endpoints:
 
-* E1 (using an nvidia card, 20GB vram)
-* E2 (using an amd igpu, up to 128GB vram)
+* k2s (using an Intel N150 6W CPU)
+* k2m (using an nvidia card, 20GB vram, 70W)
+* k2l (using an amd igpu, up to 128GB vram, 120W)
 
 ## A few things to do
+
+Depending on your experience you can install:
+
+* [Jan.ai](https://www.jan.ai/)
+* [ollama](https://ollama.com/)
 
 ### General Chat
 
 > LLM, RAG
 
 * install application, install model host (if needed), run chat, RAG, etc.
-* research; learning; legislation
+* research; learning
 
 ### Customizations, e.g. via modelfile (ollama)
 
@@ -307,7 +313,7 @@ Let's try Jan.ai with some endpoints:
 
 ### Model manipulation
 
-* de-censor a model
+* de-censor a model: [ Uncensor any LLM with abliteration ](https://huggingface.co/blog/mlabonne/abliteration)
 
 ### License Plate Scan
 
@@ -318,13 +324,11 @@ Let's try Jan.ai with some endpoints:
 
 ![](static/p-spandau.png)
 
-TODO: yolo8
+Example: [Automatic-License-Plate-Recognition-using-YOLOv8](https://github.com/Muhammad-Zeerak-Khan/Automatic-License-Plate-Recognition-using-YOLOv8#)
 
-### Document Aggregation
+### Image captioning
 
-> text, data, aggregation
-
-* fuse company reports and news to automated reports
+Augement image material with textual data: [AI exploration 6](https://github.com/miku/aiexp-25-6)
 
 ### OCR
 
@@ -332,9 +336,11 @@ Multimodal models like qwen3-vl can extract data from documents quite well.
 
 ![](x/ocr-typewriter-table/ocr-typewriter-table-strix-halo.png)
 
+Another example: [markdown output](https://github.com/miku/aiexp-25-1?tab=readme-ov-file#exp-document-parsing-ocr-htr)
+
 ### More OCR
 
-
+* nice writeup of current model: https://huggingface.co/blog/ocr-open-models
 
 ### Structured data extraction
 
@@ -342,6 +348,13 @@ Multimodal models like qwen3-vl can extract data from documents quite well.
 * basis for citation graph
 
 ![](static/refcat-intro.png)
+
+Workflow for citation graph:
+
+* [x] gather data
+* [x] extract structured output
+* [x] automated matching (manually reviewed code, also fast in order to match billions of references against millions of catalog entries)
+* [x] citation graph
 
 ### Radio Search
 
@@ -363,11 +376,10 @@ Multimodal models like qwen3-vl can extract data from documents quite well.
 * future scenario: learning books will all be adjusted for your pace; you may
   learn more, because the book understands you
 
-### Similarity search
-
 ### gifitup
 
 * random coding
+* small project (that can do limited amount of damage)
 
 ![](static/swisspark_day_night_transition.gif)
 
@@ -376,7 +388,6 @@ Multimodal models like qwen3-vl can extract data from documents quite well.
 * start with something local (and see if you get 50, 60, 70, 80, ... percent done)
 * make the use case smaller
 * some models are expensive to certain tasks, e.g. "docling", "pdftotext"
-
 
 ## Outlook
 
