@@ -298,7 +298,9 @@ Akin to different "gpt" flavors. In some projects lot of the "IP" lies in the "p
 > image, text
 
 * scan license plate in variable image
-* inspiration: Berlin Rathaus Spandau
+* inspiration:
+  [Parkhaus](https://www.tagesspiegel.de/berlin/bezirke/1400-parkplatze-am-ice-bahnhof-kunftig-ohne-ticket-ins-parkhaus-der-spandau-arcaden-13433527.html)
+("Ohne Ticket") am Berliner Rathaus Spandau
 
 ![](static/p-spandau.png)
 
