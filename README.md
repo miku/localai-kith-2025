@@ -317,14 +317,14 @@ Another example: [markdown output](https://github.com/miku/aiexp-25-1?tab=readme
 
 ### More OCR
 
-* nice writeup of current model: https://huggingface.co/blog/ocr-open-models
+* nice writeup of current models: https://huggingface.co/blog/ocr-open-models
 
 ### Structured data extraction
 
 * [GROBID](https://github.com/kermitt2/grobid) turns PDFs to TEI XML (various clients, including one in [go](https://github.com/miku/grobidclient))
 * basis for citation graph
 
-![](static/refcat-intro.png)
+[![](static/refcat-intro.png)](https://arxiv.org/abs/2110.06595)
 
 Workflow for citation graph:
 
@@ -343,6 +343,10 @@ Workflow for citation graph:
 * grep and turn quotes into website: [kith25](https://golangleipzig.space/kith25/)
 
 ![](static/screenshot-2025-11-21-033206.png)
+
+Or, as a gif:
+
+![](static/kith-2025-radio.gif)
 
 ### Language Learning
 
@@ -371,9 +375,9 @@ Workflow for citation graph:
 My expectation:
 
 The current AI tech will not deliver the value projected and a lot of the
-hardware will be up for sale, cheap rent in a few years, say 2028. By that
-time, we understand more about training models more efficiently or we just
-understand that some simpler, more transparent program will deliver actual
+hardware will be up for sale, or cheap to rent in a few years, say 2027. By
+that time, we understand more about training models more efficiently or we just
+understand that some simpler, more transparent programs will deliver actual
 value.
 
 In the meantime, I hope organizations will improve their internal data access,
