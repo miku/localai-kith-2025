@@ -179,7 +179,10 @@ on your laptop, etc.
 * [AnythingLLM](https://anythingllm.com/)
 * [Nomic GPT4All](https://www.nomic.ai/gpt4all), [Anleitung](https://www.htw-berlin.de/fileadmin/HTW/Zentral/LSC/Formulare/Lokale_Sprachmodelle_mit_GPT4All_nutzen.pdf.pdf)
 * [Jan.ai](https://www.jan.ai/)
+* [LocalAI](https://localai.io/)
 * ...
+
+And many more.
 
 ## Why?
 
@@ -256,7 +259,7 @@ Notes:
 
 ### Suggestions
 
-Let's try Jan.ai with some endpoints:
+Let's try [Jan.ai](https://www.jan.ai/) with some endpoints:
 
 * k2s (using an Intel N150 6W CPU)
 * k2m (using an nvidia card, 20GB vram, 70W)
@@ -277,6 +280,8 @@ Depending on your experience and interest you can install:
 * research; learning
 
 ### Customizations, e.g. via modelfile (ollama)
+
+Akin to different "gpt" flavors. In some projects lot of the "IP" lies in the "prompt".
 
 * [x/custom](x/custom-modelfile/) (writing assistants, support, eliza)
 
