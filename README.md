@@ -213,7 +213,7 @@ And many more.
 * fewer integrations and conveniences
 * more expensive to start with
 * security (cf. [Security Challenges in AI Agent Deployment: Insights from a
-  Large Scale Public Competition](https://arxiv.org/pdf/2507.20526)
+  Large Scale Public Competition](https://arxiv.org/pdf/2507.20526))
 
 ## Use case of shared infra
 
@@ -259,11 +259,14 @@ Notes:
 
 ### Suggestions
 
-Let's try [Jan.ai](https://www.jan.ai/) with some endpoints:
+Let's try [Jan.ai](https://www.jan.ai/) with some endpoints; our instance types
+:)
 
-* k2s (using an Intel N150 6W CPU)
-* k2m (using an nvidia card, 20GB vram, 70W)
-* k2l (using an amd igpu, up to 128GB vram, 120W)
+* `k2s` · using an Intel N150, **16GB** DDR3 RAM, 6W CPU, [spec](https://www.intel.com/content/www/us/en/products/sku/241636/intel-processor-n150-6m-cache-up-to-3-60-ghz/specifications.html)
+* `k2m` · using an nvidia card, **20GB** GDDR6, [70W](https://www.nvidia.com/content/dam/en-zz/Solutions/rtx-4000-sff/proviz-rtx-4000-sff-ada-datasheet-2616456-web.pdf)
+* `k2l` · using an amd igpu, up to **128GB** unified LPDDR5x-8000 RAM, 120W, [spec](https://www.amd.com/en/products/processors/laptop/ryzen/ai-300-series/amd-ryzen-ai-max-plus-395.html)
+
+All instances expose an openai compatible endpoint (via ollama 0.12.11), with a variety of [models](notes/k2.md).
 
 ## A few things to do
 
