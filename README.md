@@ -229,9 +229,9 @@ Notes, calculations: [miku/aiexp-25-5](https://github.com/miku/aiexp-25-5)
 
 ## Using Open Models
 
-* [ ] Download desktop application
-* [ ] Download model or connect to endpoint
-* [ ] Done
+* [x] Download desktop application
+* [x] Download model or connect to endpoint
+* [x] Done
 
 There are a number of desktop applications:
 
