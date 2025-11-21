@@ -336,6 +336,13 @@ Multimodal models like qwen3-vl can extract data from documents quite well.
 
 
 
+### Structured data extraction
+
+* [GROBID](https://github.com/kermitt2/grobid) turns PDFs to TEI XML (various clients, including one in [go](https://github.com/miku/grobidclient))
+* basis for citation graph
+
+![](static/refcat-intro.png)
+
 ### Radio Search
 
 > audio, text, search
