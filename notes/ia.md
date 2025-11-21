@@ -15,21 +15,21 @@ Join me in my time machine: [mmz-halle.de](http://web.archive.org/web/2025000000
 
 #### Digitized books
 
-[![](static/ia/screenshot-2025-11-19-170224.png)](https://archive.org/details/diehallischensc00anhagoog/page/n7/mode/2up)
+[![](../static/ia/screenshot-2025-11-19-170224.png)](https://archive.org/details/diehallischensc00anhagoog/page/n7/mode/2up)
 
 #### Classic games
 
 Lemonade Stand (1979)
 
-[![](static/ia/screenshot-2025-11-19-174622.png)](https://archive.org/details/Lemonade_Stand_1979_Apple)
+[![](../static/ia/screenshot-2025-11-19-174622.png)](https://archive.org/details/Lemonade_Stand_1979_Apple)
 
 #### Image collections
 
-[![](static/ia/screenshot-2025-11-19-174838.png)](https://archive.org/details/solarsystemcollection)
+[![](../static/ia/screenshot-2025-11-19-174838.png)](https://archive.org/details/solarsystemcollection)
 
 #### Scholarly material
 
-[![](static/ia/screenshot-2025-11-20-023000.png)](https://en.wikipedia.org/wiki/Internet_Archive_Scholar)
+[![](../static/ia/screenshot-2025-11-20-023000.png)](https://en.wikipedia.org/wiki/Internet_Archive_Scholar)
 
 #### Services
 
