@@ -254,6 +254,7 @@ projected 1M users that would amount to about EUR 5-10 per year per user.
 
 ![](/static/header_hu_21bbca9802774865.webp)
 
+Notes, calculations: [miku/aiexp-25-5](https://github.com/miku/aiexp-25-5)
 
 ## Using Open Models
 
@@ -295,10 +296,10 @@ Let's try Jan.ai with some endpoints:
 
 ## A few things to do
 
-Depending on your experience you can install:
+Depending on your experience and interest you can install:
 
-* [Jan.ai](https://www.jan.ai/)
-* [ollama](https://ollama.com/)
+* [Jan.ai](https://www.jan.ai/) (cross-platform)
+* [ollama](https://ollama.com/) (cli, app available for macOS, Windows)
 
 ### General Chat
 
