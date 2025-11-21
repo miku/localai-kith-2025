@@ -257,11 +257,42 @@ projected 1M users that would amount to about EUR 5-10 per year per user.
 
 ## Using Open Models
 
-* [ ] Download Desktop App
-* [ ] Download Model
+* [ ] Download desktop application
+* [ ] Download model or connect to endpoint
 * [ ] Done
 
-## Ten Example Use Cases
+There are a number of desktop applications:
+
+* [LMStudio](https://lmstudio.ai/)
+* [Jan.ai](https://www.jan.ai/)
+* [GPT4All](https://www.nomic.ai/gpt4all)
+* [AnythingLLM](https://anythingllm.com/)
+* [Ollama](https://ollama.com/)
+* ...
+
+Notes:
+
+* LMStudio is intuitive, but does not support remote providers (?)
+* Jan.AI is relatively lightweight, supports remote models, but lacks RAG (?); assistants can be defined; they have a [handbook](https://www.jan.ai/handbook/why/why-jan-exists)
+
+> Here's a stat that might surprise you: the average knowledge worker spends
+> 60% of their time on what researchers call "work about work." Not the actual
+> work they were hired to do. The things around it. Searching for information.
+> Chasing updates. Switching between apps. Talking about work instead of doing
+> it.
+
+* GPT4All, easier rag, single model granularity
+* AnythingLLM, complex UI; limited configuration ("by category")
+* ollama, started as a cli, UI available for macOS, Windows, only
+
+### Suggestions
+
+Let's try Jan.ai with some endpoints:
+
+* E1 (using an nvidia card, 20GB vram)
+* E2 (using an amd igpu, up to 128GB vram)
+
+## A few things to do
 
 ### General Chat
 
@@ -270,24 +301,24 @@ projected 1M users that would amount to about EUR 5-10 per year per user.
 * install application, install model host (if needed), run chat, RAG, etc.
 * research; learning; legislation
 
-### Support Chat
+### Customizations, e.g. via modelfile (ollama)
 
-* chat, rag, docs
+* [x/custom](x/custom-modelfile/) (writing assistants, support, eliza)
 
-TODO:
+### Model manipulation
 
-* match images of products to product manuals
-* load manual into a rag system; preprocessed manuals
-* answer questions over docs
-* prototype: support chat at LU
+* de-censor a model
 
 ### License Plate Scan
 
 > image, text
 
-* image understanding
 * scan license plate in variable image
 * inspiration: Berlin Rathaus Spandau
+
+![](static/p-spandau.png)
+
+TODO: yolo8
 
 ### Document Aggregation
 
@@ -295,14 +326,30 @@ TODO:
 
 * fuse company reports and news to automated reports
 
+### OCR
+
+Multimodal models like qwen3-vl can extract data from documents quite well.
+
+![](x/ocr-typewriter-table/ocr-typewriter-table-strix-halo.png)
+
+### More OCR
+
+
 
 ### Radio Search
 
 > audio, text, search
 
+* Go stream capture
+* [canary-v2-1b](https://huggingface.co/nvidia/canary-1b-v2)
+* [sentences](https://github.com/neurosnap/sentences)
+* grep and turn quotes into website: [kith25](https://golangleipzig.space/kith25/)
+
 ### Language Learning
 
 > text, coach, [impact on learning](https://link.springer.com/content/pdf/10.1007/s10648-025-10020-8.pdf)
+
+![](static/screenshot-2025-11-21-032633-simplelanguagecoach.png)
 
 * text
 * category
@@ -311,12 +358,17 @@ TODO:
 
 ### Similarity search
 
-* project things into 2D
-* images, documents; sounds
+### gifitup
 
-### GIF it up
+* random coding
 
-* "winning a contest with AI, GIF and Go"
+![](static/swisspark_day_night_transition.gif)
+
+## Some observations and approaches
+
+* start with something local (and see if you get 50, 60, 70, 80, ... percent done)
+* make the use case smaller
+* some models are expensive to certain tasks, e.g. "docling", "pdftotext"
 
 
 ## Outlook
