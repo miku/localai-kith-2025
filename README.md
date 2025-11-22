@@ -378,18 +378,19 @@ gives you feedback for your translations:
 
 * start with something local (and see if you get 50, 60, 70, 80, ... percent done)
 * make the use case smaller
-* some models are expensive to certain tasks, e.g. "docling", "pdftotext"
+* some models are expensive for certain tasks, e.g. "docling", "pdftotext" - use them deliberately
 
 ## Outlook
 
 My expectation:
 
 The current AI tech will not deliver the value projected and a lot of the
-hardware will be up for sale, or cheap to rent in a few years, say 2027. By
-that time, we understand more about training models more efficiently or we just
-understand that some simpler, more transparent programs will deliver actual
+required hardware will be up for sale, or cheap to rent in a few years. By that
+time, we understand more about training models more efficiently or we just
+understand that some simpler, more transparent programs will deliver more
 value.
 
-In the meantime, I hope organizations will improve their internal data access,
-so they will be ready, when more substantial improvements can be made.
+In the meantime, I hope organizations prepare by improving their internal data
+handling and access, so they will be ready, when more substantial products can
+be implemented.
 
