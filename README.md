@@ -349,7 +349,7 @@ Workflow for citation graph:
 
 ![](static/screenshot-2025-11-21-033206.png)
 
-Or, as a gif:
+Or, random sentences about "KI" from radio audio streams as a gif:
 
 ![](static/kith-2025-radio.gif)
 
