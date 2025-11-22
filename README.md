@@ -342,7 +342,7 @@ Workflow for citation graph:
 
 > audio, text, search
 
-* stream capture utility, written in Go: "[radioscript](https://gist.github.com/miku/55c0c8272a9f847feb9ae845e0e6e47e)" (ad-hoc)
+* audio stream capture utility, written in Go: "[radioscript](https://gist.github.com/miku/55c0c8272a9f847feb9ae845e0e6e47e)" (ad-hoc)
 * automatic speach recognition (ASR) via nvidia [canary-v2-1b](https://huggingface.co/nvidia/canary-1b-v2)
 * [sentences](https://github.com/neurosnap/sentences) to tokenize raw text into sentences (via "[Unsupervised Multilingual Sentence Boundary Detection](https://aclanthology.org/J06-4003.pdf)")
 * grep and turn quotes into website: [kith25](https://golangleipzig.space/kith25/) ([qwen3-coder](https://github.com/QwenLM/Qwen3-Coder) and friends wrote most of the code)
@@ -357,15 +357,18 @@ Or, as a gif:
 
 > text, coach, [impact on learning](https://link.springer.com/content/pdf/10.1007/s10648-025-10020-8.pdf)
 
-* text
-* category
+CLI prototype that gives you feedback for your translations:
+
+![](static/slc.gif)
+
 * future scenario: learning books will all be adjusted for your pace; you may
-  learn more, because the book understands you
+  learn more, because the book understands you a bit better
 
 ### gifitup
 
-* random coding
-* small project (that can do limited amount of damage)
+* random coding - for [gifitup](https://gifitup.net) competition
+* let the AI write code to generate something else (here: a gif)
+* only use for code that can do limited amount of damage
 
 ![](static/swisspark_day_night_transition.gif)
 

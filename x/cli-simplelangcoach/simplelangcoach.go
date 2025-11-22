@@ -62,6 +62,8 @@ func main() {
 	// 	"À demain !",
 	// }
 	sentences := []string{
+		"Combien ça coûte ?",
+		"Je ne comprends pas.",
 		"Je cherchai à grouper ces lettres de manière à former des mots.",
 		"Viennent-ils du ciel ou de l'océan?",
 	}
