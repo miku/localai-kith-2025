@@ -310,7 +310,7 @@ Example: [Automatic-License-Plate-Recognition-using-YOLOv8](https://github.com/M
 
 ### Image captioning
 
-Augement image material with textual data: [AI exploration 6](https://github.com/miku/aiexp-25-6)
+Augment image material with textual data: [AI exploration 6](https://github.com/miku/aiexp-25-6)
 
 ### OCR
 
