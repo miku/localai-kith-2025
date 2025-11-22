@@ -343,9 +343,9 @@ Workflow for citation graph:
 > audio, text, search
 
 * Go stream capture
-* [canary-v2-1b](https://huggingface.co/nvidia/canary-1b-v2)
-* [sentences](https://github.com/neurosnap/sentences)
-* grep and turn quotes into website: [kith25](https://golangleipzig.space/kith25/)
+* automatic speach recognition (ASR) via nvidia [canary-v2-1b](https://huggingface.co/nvidia/canary-1b-v2)
+* [sentences](https://github.com/neurosnap/sentences) to tokenize raw text into sentences (via "[Unsupervised Multilingual Sentence Boundary Detection](https://aclanthology.org/J06-4003.pdf)")
+* grep and turn quotes into website: [kith25](https://golangleipzig.space/kith25/) ([qwen3-coder](https://github.com/QwenLM/Qwen3-Coder) and friends wrote most of the code)
 
 ![](static/screenshot-2025-11-21-033206.png)
 
