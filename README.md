@@ -357,7 +357,9 @@ Or, random sentences about "KI" from radio audio streams as a gif:
 
 > text, coach, [impact on learning](https://link.springer.com/content/pdf/10.1007/s10648-025-10020-8.pdf)
 
-CLI prototype that gives you feedback for your translations:
+CLI prototype, where an LLM (here:
+[GPT-OSS:120b](https://www.heise.de/hintergrund/GPT-OSS-Einblick-in-die-offenen-Modelle-von-OpenAI-10513296.html))
+gives you feedback for your translations:
 
 ![](static/slc.gif)
 
