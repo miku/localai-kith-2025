@@ -33,7 +33,7 @@ Since 2008 I try to live by the motto:
 
 > "The key here is that no matter how agile you are as coders, [...] data is
 > going to be more agile than code. Because you going to write the code
-> yourself, but the data you can leverage." -- [Peter Norvig at Start School
+> yourself, but the data you can leverage." -- [Peter Norvig at Startup School
 > 2008](https://youtu.be/LNjJTgXujno?si=IweUD5YQlbZ7eTWw&t=185) (5.4K view; I
 > watched it a few times!)
 
