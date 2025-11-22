@@ -302,7 +302,7 @@ Akin to different "gpt" flavors. In some projects lot of the "IP" lies in the "p
   [Parkhaus](https://www.tagesspiegel.de/berlin/bezirke/1400-parkplatze-am-ice-bahnhof-kunftig-ohne-ticket-ins-parkhaus-der-spandau-arcaden-13433527.html)
 ("Ohne Ticket") am Berliner Rathaus Spandau
 
-![](static/p-spandau.png)
+[![](static/p-spandau.png)](https://maps.app.goo.gl/buxtSrng2ntXLwnEA)
 
 Example: [Automatic-License-Plate-Recognition-using-YOLOv8](https://github.com/Muhammad-Zeerak-Khan/Automatic-License-Plate-Recognition-using-YOLOv8#)
 
