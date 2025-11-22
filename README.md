@@ -266,7 +266,7 @@ Let's try [Jan.ai](https://www.jan.ai/) with some endpoints; our instance types
 * `k2m` · using an nvidia card, **20GB** GDDR6, [70W](https://www.nvidia.com/content/dam/en-zz/Solutions/rtx-4000-sff/proviz-rtx-4000-sff-ada-datasheet-2616456-web.pdf)
 * `k2l` · using an amd igpu, up to **128GB** unified LPDDR5x-8000 RAM, 120W, [spec](https://www.amd.com/en/products/processors/laptop/ryzen/ai-300-series/amd-ryzen-ai-max-plus-395.html)
 
-All instances expose an openai compatible endpoint (via ollama 0.12.11), with a variety of [models](notes/k2.md) - the machines live in a private VPN
+All instances expose an openai [compatible](https://github.com/openai/openai-openapi) endpoint (via ollama 0.12.11), with a variety of [models](notes/k2.md) - the machines live in a private VPN
 coordinated by a (tiny) [headscale](https://headscale.net/) node living in a data center in [Falkenstein/Vogtl.](https://de.wikipedia.org/wiki/Falkenstein/Vogtl.)
 
 ## A few things to do
