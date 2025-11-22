@@ -262,9 +262,9 @@ Notes:
 Let's try [Jan.ai](https://www.jan.ai/) with some endpoints; our instance types
 :)
 
-* `k2s` · using an Intel N150 ("[alder lake](https://en.wikipedia.org/wiki/Alder_Lake)"), **16GB** DDR3 RAM, 6W CPU, [spec](https://www.intel.com/content/www/us/en/products/sku/241636/intel-processor-n150-6m-cache-up-to-3-60-ghz/specifications.html)
-* `k2m` · using an nvidia GPU, **20GB** GDDR6, [70W](https://www.nvidia.com/content/dam/en-zz/Solutions/rtx-4000-sff/proviz-rtx-4000-sff-ada-datasheet-2616456-web.pdf)
-* `k2l` · using an amd iGPU, up to **128GB** unified LPDDR5x-8000 RAM, 120W, [spec](https://www.amd.com/en/products/processors/laptop/ryzen/ai-300-series/amd-ryzen-ai-max-plus-395.html)
+* `k2s` · using an **Intel** N150 ("[alder lake](https://en.wikipedia.org/wiki/Alder_Lake)"), **16GB** DDR3 RAM, 6W CPU, [spec](https://www.intel.com/content/www/us/en/products/sku/241636/intel-processor-n150-6m-cache-up-to-3-60-ghz/specifications.html)
+* `k2m` · using an **Nvidia** GPU, **20GB** GDDR6, [70W](https://www.nvidia.com/content/dam/en-zz/Solutions/rtx-4000-sff/proviz-rtx-4000-sff-ada-datasheet-2616456-web.pdf)
+* `k2l` · using an **AMD** iGPU, up to **128GB** unified LPDDR5x-8000 RAM, 120W, [spec](https://www.amd.com/en/products/processors/laptop/ryzen/ai-300-series/amd-ryzen-ai-max-plus-395.html)
 
 All instances expose an openai [compatible](https://github.com/openai/openai-openapi) endpoint (via ollama 0.12.11), with a variety of [models](notes/k2.md) - the machines live in a private VPN
 coordinated by a (tiny) [headscale](https://headscale.net/) node living in a data center in [Falkenstein/Vogtl.](https://de.wikipedia.org/wiki/Falkenstein/Vogtl.)
