@@ -54,7 +54,7 @@ zuverlässig." -- [KI-Kompetenzen: Worauf es im Job wirklich ankommt](https://ww
 General questions:
 
 > Jim Covello (Goldman Sachs) in [Global Macro Research, Issue 129,
-07/2024](https://www.goldmansachs.com/images/migrated/insights/pages/gs-research/gen-ai--too-much-spend%2C-too-little-benefit-/TOM_AI%202.0_ForRedaction.pdf)
+07/2024](http://web.archive.org/web/20250720040207/https://www.goldmansachs.com/images/migrated/insights/pages/gs-research/gen-ai--too-much-spend%2C-too-little-benefit-/TOM_AI%202.0_ForRedaction.pdf)
 
 > We estimate that the AI infrastructure buildout will cost over **$1tn in the
 > next several years alone**, which includes spending on data centers, utilities,
