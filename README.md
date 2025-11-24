@@ -167,7 +167,7 @@ Models](https://arxiv.org/abs/2308.14149))
 
 As of 2025-10-13, popular model hosting site huggingface lists 2147127 models.
 
-![](static/screenshot-2025-10-13-172823-hf-models.png)
+[![](static/screenshot-2025-10-13-172823-hf-models.png)](https://huggingface.co)
 
 ## Applications
 
@@ -198,7 +198,7 @@ And many more.
 > are some intriguing ideas. -- [Speech and Language Processing, Jurafsky,
 > Martin, 08/2025](https://web.stanford.edu/~jurafsky/slp3/ed3book_aug25.pdf)
 
-* after hardware costs, lower cost to run
+* after hardware costs, potentially lower cost to run
 
 > on <2k EUR HW, ex. qwen25; 28M tokens/day (prompt eval), 4.3M tokens/day
 > (eval; 30+ novels per day); depending on the provider you can pay up to EUR
