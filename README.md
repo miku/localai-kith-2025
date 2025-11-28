@@ -91,6 +91,9 @@ Model availability is not binary, there is a spectrum:
 
 ## List of popular open weights models
 
+> Note: [open weights](https://opensource.org/ai/open-weights) for models ≠ open source for code
+
+
 * [Llama](https://www.llama.com/)
 * [Mistral](https://docs.mistral.ai/getting-started/models/models_overview/#open-models)
 * [Gemma](https://deepmind.google/models/gemma/)
