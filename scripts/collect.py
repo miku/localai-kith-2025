@@ -74,15 +74,36 @@ HF_TAGS_API = "https://huggingface.co/api/models-tags-by-type"
 _HF_COUNT_RE = re.compile(r"&quot;numTotalItems&quot;:(\d+)")
 
 
-def fetch_huggingface_count(pipeline_tag: str | None = None) -> int | None:
-    """Best-effort: read numTotalItems from the rendered /models HTML page."""
-    params = {"pipeline_tag": pipeline_tag} if pipeline_tag else {}
+def _hf_count_from_html(params: dict) -> int | None:
+    """One GET to huggingface.co/models?<params>, parse numTotalItems."""
     url = f"{HF_WEB}?{urlencode(params)}" if params else HF_WEB
     print(f"  GET {url}", file=sys.stderr)
     r = requests.get(url, headers={"User-Agent": UA}, timeout=30)
     r.raise_for_status()
     m = _HF_COUNT_RE.search(r.text)
     return int(m.group(1)) if m else None
+
+
+def fetch_huggingface_count(pipeline_tag: str | None = None) -> int | None:
+    """Best-effort: read numTotalItems from the rendered /models HTML page."""
+    return _hf_count_from_html({"pipeline_tag": pipeline_tag} if pipeline_tag else {})
+
+
+HF_DERIVATION_RELS = ("finetune", "quantized", "adapter", "merge")
+
+
+def fetch_huggingface_derivation_counts(base_id: str, *, delay: float = 0.5) -> dict[str, int | None]:
+    """Per-relation derivation counts for a given base model id.
+
+    Uses the website filter `?other=base_model:<rel>:<id>` (one HTTP GET per
+    relation type, four total). The API itself doesn't expose a wildcard
+    filter for base_model:*, so this is the cheapest authoritative path.
+    """
+    counts: dict[str, int | None] = {}
+    for rel in HF_DERIVATION_RELS:
+        counts[rel] = _hf_count_from_html({"other": f"base_model:{rel}:{base_id}"})
+        time.sleep(delay)
+    return counts
 
 
 def fetch_huggingface_pipeline_tags() -> list[dict]:
@@ -239,6 +260,8 @@ def main():
                         help="print HF's canonical list of pipeline_tag values and exit (hf only)")
     parser.add_argument("--with-counts", action="store_true",
                         help="with --list-pipeline-tags: fetch a model count per tag (52 extra HTTP requests, cached per day)")
+    parser.add_argument("--list-derivations", nargs="+", metavar="BASE_ID",
+                        help="HF base model id(s) — show finetune/quant/adapter/merge counts (hf only)")
     args = parser.parse_args()
 
     if args.count:
@@ -249,6 +272,24 @@ def main():
         if n is None:
             sys.exit("could not parse numTotalItems from HF /models page")
         print(n)
+        return
+
+    if args.list_derivations:
+        if args.source != "hf":
+            sys.exit("--list-derivations is only supported for source=hf")
+        rels = HF_DERIVATION_RELS
+        name_w = max(len(b) for b in args.list_derivations)
+        header = f"{'base':<{name_w}}  " + "  ".join(f"{r:>10}" for r in rels) + f"  {'total':>10}"
+        print(header)
+        print("-" * len(header))
+        for base in args.list_derivations:
+            counts = fetch_huggingface_derivation_counts(base, delay=args.hf_delay)
+            cells = [counts.get(r) for r in rels]
+            total = sum(c for c in cells if c is not None)
+            row = (f"{base:<{name_w}}  "
+                   + "  ".join(f"{('-' if c is None else f'{c:,}'):>10}" for c in cells)
+                   + f"  {total:>10,}")
+            print(row)
         return
 
     if args.list_pipeline_tags:
