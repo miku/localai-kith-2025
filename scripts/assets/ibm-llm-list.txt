@@ -1,0 +1,843 @@
+   Link: canonical
+   Link: alternate ar-sa
+   Link: alternate de-de
+   Link: alternate en-us
+   Link: alternate ko-kr
+   Link: alternate pt-br
+   Link: alternate ar-qa
+   Link: alternate es-es
+   Link: alternate ar-ae
+   Link: alternate zh-cn
+   Link: alternate es-mx
+   Link: alternate it-it
+   Link: alternate id-id
+   Link: alternate fr-fr
+   Link: alternate ja-jp
+   IBM Dev Day: Bob Edition Building Intelligent Apps with Agents and MCP |
+   Register now
+   Abstract three-dimensional rectanges
+   Artificial Intelligence
+
+                     A list of large language models (LLMs)
+
+   By Dave Bergmann
+   Published 10 March 2025
+   Updated 02 April 2026
+
+A list of LLMs
+
+   Large language models (LLMs) have become the bedrock of modern artificial
+   intelligence development. They initiated and now define the generative AI
+   era, from straightforward chatbot applications to agentic engineering and
+   other complex automated workflows driven by AI agents. Their advent has
+   marked a fundamental turning point in the history of machine learning.
+
+   As the technology matures, new LLMs continue to proliferate. Leading AI
+   developers, new start-ups and established enterprise powerhouses alike are
+   perpetually releasing and refining new models. Meanwhile, the open source
+   community is constantly fine-tuning open source LLMs, merging and
+   modifying existing models on custom datasets to create endless variants.
+   As such, no list of LLMs could reasonably hope to be exhaustive—and even
+   the most “exhaustive” list wouldn’t remain so for very long.
+
+   What follows is a list of some of the most prominent and performant LLMs
+   available today. Here are some things to note:
+
+     * This list is limited to generative LLMs capable of text generation,
+       excluding AI models that are designed only for natural language
+       understanding (NLU) or for other natural language processing (NLP)
+       tasks. It does not include, for instance, the embedding models (such
+       as BERT or Granite Embedding) that power semantic search and retrieval
+       augmented generation (RAG).
+     * The list prioritizes models that are actively being supported and
+       updated by their developers, and maintain at least nominally
+       competitive performance. This excludes a number of historically
+       influential foundation models, such as Google’s T5, OpenAI’s GPT-3 or
+       Meta’s Llama 2, some of which continue to be used for research
+       purposes.
+
+   For practical purposes, LLMs can generally be divided into 2 categories:
+   closed source LLMs, available solely as commercial offerings through the
+   model developer, and open models, which are made freely available at no
+   cost.
+
+   3D design of balls rolling on a track
+
+  The latest AI News + Insights  
+
+   Discover expertly curated insights and news on AI, cloud and more in the
+   weekly Think Newsletter. 
+
+   Subscribe today  
+
+Closed source LLMs
+
+   A closed source model, or proprietary model, can only be accessed directly
+   on the model developer’s platform, other platforms to which they have
+   licensed their model or through the model provider’s proprietary API.
+
+   Because closed model developers generally treat their technical details as
+   closely guarded trade secrets, it’s typically impossible to know with
+   certainty the specifics of a closed model’s size, neural network
+   architecture or training process. Some details can be inferred—for
+   instance, by comparing a closed model’s inference speed, GPU memory usage
+   and benchmark performance to that of open models whose details are
+   publicly disclosed—but rarely, if ever, confirmed.
+
+   Since at least since roughly 2022, most state-of-the-art frontier models
+   at any given time have been closed models—but that’s largely a reflection
+   of the real-world historical circumstances of the industry, rather than
+   any inherent superiority of closed models to open models. What follows are
+   some of the most notable closed model series, ordered alphabetically.
+
+  Claude (Anthropic)
+
+   Anthropic’s Claude language models are among the world’s most performant.
+   Originally founded as an AI safety research lab in 2021 by former OpenAI
+   employees, Anthropic’s approach to model development is built around the
+   unique concept of Constitutional AI. Claude’s “Constitution” is a document
+   that serves not only to guide the conduct of Anthropic employees, but the
+   conduct (and creation of synthetic training data) of Claude models
+   themselves.
+
+   Since Claude 3, successive generations of Claude have featured multimodal
+   models in 3 different sizes:
+
+     * Claude Haiku are Anthropic’s smallest models, optimized for speed and
+       cost-efficiency. Unlike Sonnet and Opus, Haiku models are not
+       reasoning models: unless explicitly prompted to do so, Haiku models do
+       not output chain-of-thought (CoT) reasoning traces.
+     * Claude Sonnet are Anthropic’s mid-sized models, aimed at what
+       Anthropic considers to be the optimal tradeoff between performance and
+       efficiency for most use cases. Both Sonnet and Opus are hybrid
+       reasoning models, meaning they can be configured to perform either
+       standard inference or adaptive CoT reasoning for complex, multi-step
+       problem solving.
+     * Claude Opus are Anthropic’s largest, most powerful models, aimed at
+       frontier performance across challenging tasks.
+
+   Claude Haiku, Sonnet and Opus can all process text, audio and image
+   inputs, and output text or audio (as text-to-speech). Historically, unlike
+   most of their closed model competitors, they (and the Claude platform that
+   they power) were not capable of image generation—but as of March 12, 2026,
+   Claude can now generate images. When accessing the models through the
+   Claude API, users can set the “effort level” of Sonnet or Opus’s reasoning
+   process to “max,” “high,” “medium,” “low” or “adaptive.”
+
+  Gemini (Google)
+
+   Gemini is Google’s closed language model series, developed by its
+   subsidiary Google DeepMind and first launched in December 2023. It’s worth
+   noting that Google Brain (which was merged with DeepMind to form Google
+   DeepMind in 2023) is responsible for the creation of the transformer model
+   architecture that enabled the first LLMs, having published the landmark
+   “Attention is All You Need” research paper in 2017.
+
+   Since early 2025, Google has released each generation of Gemini models
+   with 3 different sizes, all of which are reasoning models. When accessed
+   through the Gemini API, users can select one of multiple “thinking
+   levels” to customize the amount of tokens and time the model will spend
+   before generating a final output.
+
+     * Gemini Pro models are Google’s largest, state-of-the-art LLMs.
+
+     * Gemini Flash models are, in comparison to Gemini Pro, optimized for
+       speed.
+
+     * Gemini Flash-Lite models are fast, cost-efficient models optimized for
+       high-volume tasks such as translation and agentic tool use.
+
+   Gemini Pro, Flash and Flash-Lite models are natively multimodal: they can
+   process text, audio, image or video inputs and generate text outputs. When
+   accessed through the Gemini platform, multimodal outputs can be generated
+   through Gemini’s separate, specialized models for image generation, video
+   generation or music generation.
+
+   Since the release of Gemini 2.5 Pro in March 2025, which achieved
+   then-industry best performance across most academic benchmarks, Gemini
+   models have contended with Claude and OpenAI’s GPT series as the world’s
+   most performant LLMs. Generally speaking, the status of “top” model
+   changes hands each time a new frontier model in one those three series is
+   released.
+
+  Grok (xAI)
+
+   Grok is a family of proprietary LLMs produced by xAI, first launched in
+   beta preview as a chatbot on X (formerly Twitter) in November 2023. In
+   April 2025, xAI launched API access for Grok 3, which was then its newest,
+   flagship model.
+
+   Grok’s model lineup has continued to change over successive generations of
+   model releases.
+
+     * Grok 2 was accompanied by Grok 2 Mini, the model family’s first
+       size-based variant. This same convention was repeated for Grok 3 in
+       February 2025.
+
+     * The 4th generation of Grok models was launched with Grok 4 and Grok 4
+       Heavy in July 2025. In the fall of 2025, these were followed by Grok 4
+       Fast, and then by Grok 4.1 (available in both Thinking and
+       Non-thinking configurations).
+
+     * In August 2025, xAI released Grok Code Fast 1, an efficiency-focused
+       model optimized for agentic coding.
+
+   As of Grok 4, Grok models can process text, image and speech inputs.
+   Though the Grok LLMs cannot provide multimodal outputs, image and video
+   outputs can be generated by xAI’s Aurora model through its Grok Imagine
+   platform.
+
+   Unrelated to its raw performance, much of Grok’s history (and particularly
+   that of the Grok chatbot) has been marked by controversy, such as
+   accusations of spreading election misinformation, inserting polarizing
+   viewpoints into unrelated conversations and perpetuating harmful
+   stereotypes.
+
+    Open source releases
+
+   In public statements, xAI CEO Elon Musk has said that “our general
+   approach is that we will open source the last version when the next
+   version is fully out.”^1
+
+   xAI open-sourced Grok 1 under Apache 2.0 license in March 2024. Though
+   Grok 3 was released in February 2025, the next open-source release of a
+   Grok model was not until August of 2025. Confusingly, xAI (and Musk)
+   announced that they had open-sourced “Grok 2.5,”^ 2 though no model had
+   been named nor announced as such prior to that statement. The model’s own
+   Hugging Face model card even refers to the model as “Grok-2.”
+
+   In that August 2025 announcement, Musk indicated that Grok 3 would be
+   likewise open-sourced in “about 6 months.” As of 8 months later, said open
+   source release date is yet to be announced.
+
+  GPT (OpenAI)
+
+   OpenAI’s GPT series—short for Generative Pretrained Transformer—is largely
+   credited with initiating the current era of generative AI, particularly
+   following the 2022 launch of ChatGPT with their GPT-3.5 model.
+
+   OpenAI’s for model naming and variant conventions has changed
+   significantly since 2022, often in a confusing way. For instance, GPT-4.1
+   was released after GPT-4.5, and the o4 reasoning model was available at
+   the same time as the multimodal non-reasoning model GPT-4o, which was an
+   entirely distinct from their “o4” reasoning model, whose performance was
+   inferior to that of “o3.” In early 2025, OpenAI CEO Sam Altman
+   acknowledged that “We realize how complicated our model and product
+   offerings have gotten.”
+
+   Since the release of GPT-5 in August 2025, the company’s consolidated LLM
+   offerings now comprise:
+
+     * GPT-5.x is OpenAI’s flagship general-purpose offering. As of March
+       2026, the latest model version is GPT-5.4. Though all GPT-5 models are
+       reasoning models, GPT-5.4 is also available in a GPT-5.4 Pro variant,
+       which “uses more compute to think harder and provide consistently
+       better answers.”^3 OpenAI also offers GPT-5 Codex, a version of GPT-5
+       fine-tuned for optimal agentic code generation (which is periodically
+       updated following updated versions of the core model).
+     * GPT-5 mini offers “near-frontier intelligence for cost sensitive, low
+       latency, high volume workloads,” according to OpenAI’s model
+       overviews.
+     * GPT-5 nano is the “fastest, most cost-effective version of GPT-5.”
+
+   OpenAI has also release 2 open weight GPT models, which are detailed in
+   the “Open models” section of this article.
+
+Mistral AI
+
+   Mistral AI, a France-based company founded by former employees of Meta AI
+   and Google DeepMind, was originally dedicated entirely to open source
+   models upon the launch of its first model (Mistral 7B) in September 2023.
+   Since then, Mistral has transitioned to a mixed model in which many of its
+   offerings have open releases but select frontier models remain closed
+   source.
+
+   As of March 2026, Mistral AI’s flagship proprietary LLMs include:
+
+     * Mistral Medium 3.1, a general-purpose multimodal model released in
+       August 2025.
+
+     * Codestral, a coding-focused model “built specifically for
+       high-precision fill-in-the-middle (FIM) completion.”^4
+
+     * Magistral Medium 1.2, a reasoning model companion to Mistral Medium.
+
+   Mistral’s open weight model offerings are detailed later in this article.
+
+   Think Keynotes
+
+  How enterprises excel in the AI era
+
+   Move beyond AI hype to measurable value. See how IBM is transforming into
+   an AI-first enterprise and turning agentic AI into productivity,
+   reinvestment and real business impact.
+
+   Build with watsonx Orchestrate®
+
+Open source LLMs
+
+   In machine learning, open source is often used colloquially to refer to AI
+   tools whose source code is made available free of charge, but the term is
+   actually a formal designation stewarded by the Open Source Initiative
+   (OSI). The OSI only certifies a given software license as “Open Source
+   Initiative approved” if it deems said license to meet the ten requirements
+   listed in the official Open Source Definition (OSD).
+
+   Most “open source” models do not meet all of those requirements. That
+   being the case, the term open model (or open weight model) more accurately
+   refers to any freely distributed LLM. Within the spectrum of open models
+   is a great deal of variability. An open weight (but not open source) model
+   can be used to run inference and can even be fine-tuned—but if its full
+   source code is not provided, it can’t be modified beyond changes to the
+   values of its weights through fine-tuning. Its license might prohibit the
+   model’s use in some scenarios (such as commercial settings) or place other
+   specific stipulations on its application.
+
+   A true open source model released with training code and a description of
+   its training procedures, conversely, can be fully modified in any way and
+   used without restriction. The most common and standardized open source
+   licenses are the Apache 2.0 license and MIT license. It’s worth noting,
+   however, that unless an open source model’s developer provides the details
+   of its training data, the model itself is not fully reproducible.
+
+   Open source releases are integral to the continued development and
+   improvement of LLMs, and are largely responsible for enabling their
+   invention in the first place. Open models can typically be accessed
+   through their model developer or through popular open source platforms
+   such as GitHub or Hugging Face. What follows is a list of notable open
+   model series, organized alphabetically.
+
+  Cohere
+
+   Cohere, a Canada-based company whose founders include one of the authors
+   of “Attention is All You Need,” was launched in 2019. Though the company
+   releases detailed technical reports for each LLM and ostensibly releases
+   them as open weight models, Cohere licenses their open releases under a
+   modified version of the Creative Commons 4.0 license  that prohibits
+   commercial use.
+
+    Command
+
+    Command is Cohere’s flagship foundation model series, designed for
+   enterprise use cases.
+
+     * Command R was the first generation of Cohere’s enterprise models,
+       launched in March 2024 with a 35 billion parameter model with an
+       emphasis on RAG and tool use. Its release was soon followed by Command
+       R+, a 104B variant, the following month. They were joined by the
+       smaller Command R7B that December.
+
+     * Command A, the second generation of Cohere’s enterprise models, was
+       released in March 2025 with a focus on business, STEM and coding
+       tasks. The original 111B model was eventually released in variants
+       including Command A Reasoning, Command A Translate (fine-tuned to
+       optimize translation performance across 23 languages) and Command A
+       Vision,  a vision language model (VLM) that paired the LLM with a
+       vision encoder.
+
+   In a March 2026 Reddit comment, Cohere CEO Aidan Gomez indicated that the
+   company was actively developing the next generation of Command, and that
+   they would be the organization’s first mixture of experts (MoE) models.
+
+    Aya
+
+   Aya is Cohere’s multilingual-focused model series, first launched in
+   February 2024 with Aya 101—which, as its name suggests, was “capable of
+   following instructions in 101 languages.”
+
+     * Aya Vision is a multimodal, multilingual VLM, offered in 8B and 32B
+       variants, with capabilities across 23 different languages.
+
+     * Tiny Aya, released in February 2026  is a series of lightweight
+       multilingual models with 3.35B parameters. Tiny Aya-Base is a
+       pretrained model supporting over 70 languages. TinyAya-Global is its
+       instruction-tuned counterpart, supporting 67 languages.
+
+     * The Tiny Aya release also contained specialized regional variants.
+       TinyAya-Earth is optimized for African and West Asian languages;
+       TinyAya-Fire is optimized for South Asian languages; TinyAya-Water is
+       optimized for Asia-Pacific and European languages.
+
+  DeepSeek
+
+   DeepSeek is an integral player in the open source ecosystem, contributing
+   a number of innovations to LLM architectures and training processes. At
+   times, its models’ performance have rivaled that of top closed models.
+   Their LLMs—both weights and code—are open sourced under a standard MIT
+   license. DeepSeek also frequently releases technical papers detailing
+   their findings and techniques.
+
+     * DeepSeek-V3 is a large MoE model, with 671B total parameters (and 37B
+       active parameters during inference), first released in late 2024. The
+       model is often credited with bringing the mixture of experts
+       architecture back into mainstream prominence.
+
+     * DeepSeek-R1 is a reasoning model, built by fine-tuning DeepSeek-V3
+       using then-novel reinforcement learning techniques. DeepSeek-R1 was a
+       landmark in the history of open source LLMs. It not only rivaled the
+       performance of OpenAI previously-unmatched o1 model, but provided
+       technical paper with full details of DeepSeek’s training methodology.
+       Its release directly inspired the first generation of open reasoning
+       models.
+
+     * DeepSeek-V3.1, released in August 2025, is a hybrid reasoning model,
+       configuring to run both standard inference and CoT reasoning. In
+       essence, it combined DeepSeek-V3 and DeepSeek-R1 into a single model.
+       It was most recently updated as DeepSeek-V3.2 in October 2025. Both
+       DeepSeek-V3.1 and DeepSeek-V3.2 retain the 671B-37B MoE architecture
+       of the original model.
+
+     * DeepSeek also released several “DeepSeek-R1-Distill” models, created
+       by fine-tuning smaller Qwen and Llama models to emulate DeepSeek-R1
+       through knowledge distillation.
+
+   Despite periodic rumors of an impending DeepSeek-V4 (or “DeepSeek-R2”),
+   their releases are yet to materialize.
+
+  Falcon (TII)
+
+   The Falcon series of LLMs are developed by the UAE’s Technology Innovation
+   Institute (TTI). Though TII’s first generational of models in 2023 was
+   perhaps most notable for Falcon-180B, which at the time was one of the
+   largest open source models available, TII have since focused on smaller
+   models. Falcon2 had 11B parameters and Falcon3, TII’s first multimodal
+   models (released in December 2024), ranged from 1B to 10B.
+
+   The most recent generations of Falcon models have focused on hybrid
+   Mamba-Transformer models.
+
+     * Falcon-H1, released in May 2025, comprises pretrained and
+       instruction-tuned hybrid models in 0.5B, 1.5B, 3B, 7B and 34B
+       variants. Falcon-H1R, released in January 2026, is a reasoning variant
+       of Falcon-H1-7B.
+
+     * Falcon-H1-Tiny are, as their name suggests, extremely small variants
+       of Falcon-H1, in sizes of 90M, 100M and 0.6B parameters. Each size is
+       offered as both base modles and as specialized variants fine-tuned for
+       specific use cases.
+
+     * Falcon-Edge models is a family of experimental 1-bit (“BitNet”) LLMs
+       in sizes of 1B and 3B.
+
+   Falcon models are released under a proprietary Falcon license that is
+   inspired by, but adds notable stipulations and constraints to, the Apache
+   2.0 framework.
+
+  Gemma (Google)
+
+   Gemma is Google’s family of open models. According to Google, Gemma models
+   are “built from the same technology that powers [their] Gemini models.”^7
+
+     * Gemma 3, released in March 2025, is the latest generation of Gemma’s
+       core LLM. The initial Gemma release contained both pretrained and
+       instruction-tuned variants in sizes of 1B, 4B, 12B and 27B. In August
+       2025, Google added a smaller variant with 270M parameters. Gemma 3
+       models can process text or image inputs and offer multilingual support
+       for over 140 languages.
+     * Gemma 3n, released in July 2025, feature an experimental MatFormer
+       architecture that essentially allows for any number of smaller,
+       custom-sized models to be “nested” within a single, larger model. The
+       architecture is named after Russian nesting dolls, also called
+       “Matryoshka” dolls—hence MatFormer. Gemma 3n is offered in nominal
+       sizes of 2B and 4B parameters and supports text, image, video or audio
+       inputs (but text-only outputs).
+
+     * FunctionGemma is a variant of Gemma 3 270M fine-tuned for tool use (or
+       “function calling,” hence the name).
+
+   Gemma models are released under the Gemma license, whose usage terms are
+   similar to those of the Apache 2.0 license but are governed by the Gemma
+   Prohibited Use Policy.
+
+  GLM (Z.ai)
+
+   GLM is a family of LLMs from Beijing-based Z.ai (also called Zhipu AI)
+   that aim for state-of-the-art performance. The company achieved a
+   breakthrough with GLM-4.5, which upon its initial release in late July
+   2025 ostensibly rivaled the world’s top open models, including the
+   flagship models from DeepSeek and Qwen, across academic benchmarks.
+
+     * GLM-4.5 was offered in 2 model sizes—the flagship LLM, a large-scale
+       MoE model with 355B total parameters (32B active), and the smaller
+       GLM-4.5-Air (with 106B total parameters, 12B active). GLM-4.5V is a
+       VLM, built on the GLM-4.5-Air foundation model, that adds computer
+       vision and video understanding capabilities.
+
+     * GLM-4.6, an updated version of GLM-4.5 released on September 30, 2025,
+       did not include a smaller text-only variant. However, in early
+       December the company released GLM-4.6V (an update of GLM-4.5V) and
+       GLM-4.6V-Flash, a 9B dense model.
+
+     * GLM-4.7, an update to the flagship text-only model released in late
+       December 2025, added GLM-4.7-Flash, a significantly smaller LLM with
+       only 30B total parameters (and 3B active parameters).
+
+     * GLM-5, released in February 2026, is significantly larger than its
+       predecessors, with 744B total parameters (40B) active.
+
+  Granite (IBM)
+
+   IBM Granite is a series of open source LLMs optimized for enterprise use
+   cases, focused primarily on small, practical and efficient models. First
+   launched in September 2023, Granite rose to prominence upon the release of
+   Granite 3.0 in October 2024, which saw the Granite series reach
+   performance rivaling that of leading open models of comparable size.
+
+   Granite 4, launched in October 2025, introduced a new hybrid
+   Mamba2-Transformer architecture for superior speed and memory efficiency,
+   particularly under large workloads, compared to conventional transformer
+   models.
+
+     * Granite 4-H Small is a hybrid MoE model with 32B total parameters (9B
+       active). Granite 4 also includes another hybrid MoE, Granite 4-H Tiny,
+       with 7B total parameters (1B active), and a dense hybrid model,
+       Granite 4-H Micro, with 3B active parameters.
+
+     * Granite 4 Micro is a 3B dense model built on a conventional
+       transformer model architecture, unlike the 4-H models.
+
+     * Granite 4 Nano is a series of hybrid Mamba-transformer and
+       conventional transformer models in sizes ranging from 350M parameters
+       to 1B parameters.
+
+     * Granite 4 1B-Speech is a speech-to-text model designed for automatic
+       speech recognition (ASR) and bidirectional automatic speech
+       translation (AST).
+
+   All Granite models are open sourced under a standard Apache 2.0 license
+   and trained on enterprise-safe data. In October 2025, the Granite series
+   became the first major open model family to receive ISO-42001
+   certification.
+
+  GPT-OSS (OpenAI)
+
+   GPT-OSS are OpenAI’s open weight language models, released in August 2025
+   under a standard Apache 2.0 license. They’re the company’s first open LLMs
+   since the release of GPT-2 in 2019.
+
+     * GPT-OSS-120B is an MoE model 117B total parameters (5.1B active),
+       designed for general purpose use and tasks benefitting from high-level
+       reasoning.
+
+     * GPT-OSS-20B is an MoE model with 21B parameters (3.6B active) intended
+       for lower latency use and local deployment.
+
+   Both GPT-OSS models were trained with 4-bit quantization of their model
+   weights, significantly increasing their speed and reducing their memory
+   requirements relative to those of conventional models of similar size.
+
+  Kimi (Moonshot AI)
+
+   Kimi is a series of open models developed by Beijing-based Moonshot AI.
+
+     * Kimi-K2 is a text-only, massive MoE model with 1 trillion total
+       parameters (32B active). It achieved significant notoriety upon its
+       release in July 2025 for rivaling and (sometimes beating) GPT-4.1 and
+       Claude Opus 4 models on key coding benchmarks.^8 
+
+     * Kimi-K2 Thinking, the reasoning model variant of Kimi-K2, likewise
+       caused a stir for once again rivaling top closed models across
+       challenging agentic AI benchmarks.^9 
+
+     * Kimi-K2.5 an update to Kimi-K2 that adds multimodal vision
+       capabilities. It can be operated in multiple “modes,” each optimized
+       for specific use cases.
+
+   Kimi models are released under a modified MIT License, requiring users to
+   “prominently display ‘Kimi K2’ on the user interface” of any product with
+   over 100 million monthly active users or more than USD 20M in monthly
+   revenue.
+
+  Llama (Meta)
+
+   Meta’s Llama models (original stylized as LLaMA, short for “Large Language
+   model Meta AI), have been an integral part of the history of open LLMs.
+   Early Llama releases help democratize LLM methodologies, informing and
+   strongly influencing many standard conventions of LLM development, from
+   training to architecture and sizing variations.
+
+     * Llama 2, released in July 2023, was released in sizes of 7B, 13B and
+       70B.
+
+     * Llama 3, released in April 2024 in sizes of 8B and 70B, competed with
+       many leading closed models across academic benchmarks. Llama 3.1 
+       significantly expanded the models’ context length and added a
+       then-unprecedentedly large 405B variant that July. Llama 3.2 added
+       both smaller variants and vision capabilities, while Llama 3.3
+       featured a single 70B model whose performance rivaled that of Llama
+       3.1 405B.
+
+     * Llama 4, released in featured 2 large multimodal MoE models: Llama 4
+       Maverick, with 400B total parameters (17B active) and Llama 4 Scout,
+       with 109B total parameters (19B active). Though their performance
+       significantly exceeded that of prior Llama generations across most
+       benchmarks, Llama 3 models remain Meta’s most popular LLMs (as
+       reflected by downloads on Hugging Face).^10
+
+   Though Meta often uses the term “open source,” Llama models are released
+   under a custom Llama license that places constraints on usage, attribution
+   and access. The Open Source Initiative has therefore criticized Meta’s use
+   of the term.
+
+  Minimax
+
+   Shanghai-based MiniMax Group released their first eponymous LLM,
+   MiniMax-Text-01, and a companion VLM, MiniMax-VL-01, in January 2025. They
+   have since risen to prominence as one of the premier LLM developers in
+   China, prioritizing large-scale models and long context windows.
+
+     * MiniMax-M1, released in June 2025, is a text-only reasoning model
+       built from fine-tuning MiniMax-Text-01. Like its predessor, it’s a
+       large MoE model with 456B total parameters and 45.9B parameters
+       activated per token.
+     * MiniMax-M2 offers superior performance and efficiency compared to M1.
+       It has 230B total parameters, and a more fine-grained MoE architecture
+       that activates only 10B parameters per token. Released in October
+       2025, it was updated as MiniMax-M2.1 two months later. MiniMax also
+       offers MiniMax-M2-her, a version fine-tuned for character-based
+       roleplay.
+
+     * MiniMax-M2.5 and MiniMax-M2.5-Lightning, released in February 2026,
+       achieve further performance optimization, rivaling Claude Opus 4.5 on
+       select coding benchmarks. They are identical in all regards except
+       speed and throughput: the “Lightning” variant generates output twice
+       as fast.
+
+     * MiniMax-M2.7, released in March 2026, is an update to MiniMax-M2.5
+       that the company claims helped to train itself.^11
+
+   MiniMax models are offered under a modified MIT License.
+
+  Mistral AI
+
+   Alongside its closed-source offerings, Mistral AI offers a variety of
+   well-regarded open models. Most (but not all) of Mistral’s open models are
+   released under standard Apache 2.0 license.
+
+     * Mistral Large 3 utilizes a DeepSeek-V3-inspired MoE architecture, with
+       675B total parameters (41B active). Its benchmark performance is
+       roughly equivalent to that of DeepSeek-V3.1 and Kimi-K2.1.^12 Released
+       in December 2025, it’s multilinigual and multimodal, capable of
+       processing both text and image inputs.
+
+     * Ministral 3 is Mistral’s small model series, offered in 3B, 8B and 14B
+       sizes and base, instruction-tuned and reasoning variants.
+
+     * Mistral Small 3.2 is a 24B LLM released in June 2025. Its performance
+       is comparable to that of the more recent Ministral 3 14B.
+
+     * Devstral is Mistral’s agentic engineering-focused model series.
+       Devstral 2, released in December 2025, comprises two models. Devstral
+       2 123B is released under a modified MIT License, requiring
+       organizations with over $20M USD in monthly revenue to request a
+       commercial license from Mistral. Devstral Small 2 24B is released
+       under standard Apache 2.0 license.
+
+     * Mixtral, released in December 2023, is an LLM that originally
+       popularized the mixture of experts architecture for language models.
+       As of early 2026, its 8x7B variant remains extremely popular on
+       Hugging Face, with over 700,000 monthly downloads.^13
+
+  Nemotron (NVIDIA)
+
+   Preeminent hardware manufacturer NVIDIA’s open LLM series are well
+   regarded for their performance, research literature and architectural
+   innovations.
+
+     * NVIDIA-Nemotron-Nano v2 is a family of hybrid Mamba-2-LLM models in
+       sizes of 9B and 12B, capable of both reasoning and standard inference.
+       They were released in August 2025 under a custom NVIDIA Open Model
+       License Agreement with notable conditions regarding legal liabilities,
+       usage and NVIDIA’s right to make future modifications to the
+       agreement.
+
+     * Nemotron 3 Nano, released in Decemember 2025, comprises 2 models:
+       Nemotron-3-Nano-4B and Nemotron-3-Nano-30B-A3B, an MoE with 30B total
+       parameters (3B active). They were released under the NVIDIA Nemotron
+       Open Model License, which omits NVIDIA’s right to make unilateral
+       future updates to the terms.
+
+     * Nemotron 3 Super is a larger MoE with 120B total parameters (12B
+       active), released in March 2026.
+
+  Olmo (AllenAI)
+
+   Olmo, developed by the Allen Institute for AI (“Ai2”), are among the most
+   truly “open” of all open source models: Ai2 typically releases all code,
+   weights, training checkpoints and associated datasets alongside a standard
+   Apache 2.0 release.
+
+     * Olmo 3, released in November 2025, comprises dense transformer models
+       in sizes of 7B and 32B. The models are released in base, instruct and
+       “think” variants. In December 2025, the 32B received an update as Olmo
+       3.1.
+     * Olmo Hybrid, released in March 2026, is a 7B model with an
+       experimental hybrid architecture combining both transformer and linear
+       RNNs (based on the Gated DeltaNet architecture popularized by Qwen).
+
+  Phi (Microsoft)
+
+   Phi is Microsoft’s open model line, historically focused on small models.
+   They’re released under standard MIT License.
+
+     * Phi 4 is a 14B text-only LLM, originally released in December 2024.
+
+     * Phi 4-mini, released in in February 2025, is a smaller, 3.8B model.
+
+     * Phi 4-multimodal, released alongisde Phi 4-mini, supports text, image
+       and speech inputs.
+
+     * Phi 4-Reasoning-Vision, released in March 2026  is a 15B model that
+       adds holistic, multimodal reasoning across images, text and documents.
+
+  Qwen (Alibaba)
+
+   The Qwen series of LLMs, developed by Alibaba, have become among the most
+   popular open models in the industry. The model family offers a wide
+   variety of model sizes, architecture and capabilities intended to suit a
+   variety of developer needs.
+
+     * Qwen3 comprises text-only dense transformer models in sizes of 0.6B,
+       1.7B, 4B, 8B, 14B and 32B, as well as MoEs in sizes of 30B-A3B and the
+       flagship Qwen3-235B-A22B. All Qwen3 models are offered in base,
+       thinking and instruct variants.
+
+     * Qwen3-Next is an experimental text-only MoE with 80B parameters (3B
+       active) that replaces standard attention with Gated Delta Networks
+       (inspired by Mamba-2) and Gated Attention.
+
+     * Qwen3-Omni is a natively multimodal model built on Qwen3-30B-A3B,
+       supporting text, image, audio or video inputs and text or speech
+       outputs.
+
+     * Qwen3-Coder-Next is a version of Qwen3-Next fine-tuned for code
+       generation.
+
+     * Qwen3.5, released in February 2026, is a family of multimodal models
+       utilizing the architecture first introduced in Qwen3-Next. It
+       comprises both base and hybrid reasoning models in sizes of 0.8B, 2B,
+       4B, 9B and 27B, as well as MoE models in sizes of 35B-A3B, 122B-A10B
+       and the flagship 397B-A17B. Qwen3.5-397B-A17B aims to compete with
+       leading Gemini, GPT and Claude models for frontier performance.
+
+Author
+
+   Dave Bergmann
+
+   Senior Staff Writer, AI Models
+
+   IBM Think
+
+    Share
+
+   Link copied
+   Upcoming webinar - May 20, 2026 Upcoming webinar on AI‑native development
+
+   Engineering teams are strained by legacy tools and tech debt. Discover how
+   an AI‑native SDLC helps teams move faster while reducing risk.
+
+   Join now
+
+Resources
+
+   Cartoon robot wearing a hard hat waves beside a laptop, with code symbols
+   and UI elements in blue.
+   IBM Bob Meet Bob™, your AI development partner
+
+   An AI powered tool that helps you code, debug and deliver high quality
+   software without breaking your flow.
+
+   Start building with Bob
+   Abstract pattern of curved arrows and dotted lines in blue and purple,
+   forming flowing directional paths.
+   Guide Start realizing ROI: A practical guide to agentic AI
+
+   Learn how to scale agentic AI for measurable ROI across your enterprise.
+   This playbook outlines the top barriers that limit impact, how to
+   effectively measure ROI and a practical framework to drive successful,
+   enterprise-wide adoption.
+
+   Get the guide
+   Abstract composition with blue chevron arrows, a black network diagram of
+   connected shapes, and overlapping green geometric planes.
+   AI models Explore IBM Granite
+
+   Discover IBM Granite®, our family of open, performant and trusted AI
+   models, tailored for business and optimized to scale your AI applications.
+   Explore language, code, time series and guardrail options.
+
+   Learn more
+   Flat illustration of modern buildings with rounded windows, plants, and
+   clouds in green and blue tones.
+   IBM TechXchange IBM AI community
+
+   Join the community for Al architects and builders to learn, share ideas
+   and connect with others.
+
+   Find your community
+   Abstract 3D blue layered shape floating inside a tilted square frame on a
+   gradient blue background.
+   Training IBM watsonx® Developer Hub
+
+   Support your next project with some of our most used capabilities. Get
+   started and learn more about the supported models that IBM provides.
+
+   Get started
+   IBM Think Podcast thumbnail for Techsplainers
+   Techsplainers podcast Large language models explained
+
+   Techsplainers by IBM breaks down the essentials of LLMs, from key concepts
+   to real‑world use cases. Clear, quick episodes help you learn the
+   fundamentals fast.
+
+   Listen now
+   Related solutions              
+   IBM watsonx Orchestrate®
+
+   Easily design scalable AI assistants and agents, automate repetitive tasks
+   and simplify complex processes with IBM watsonx Orchestrate.
+
+   Explore watsonx Orchestrate              
+   IBM Bob
+
+   Accelerate software delivery with Bob, your AI partner for secure,
+   intent-aware development.
+
+   Explore IBM Bob              
+   Artificial intelligence solutions
+
+   Put AI to work in your business with IBM’s industry-leading AI expertise
+   and portfolio of solutions at your side.
+
+   Explore AI solutions
+   Take the next step
+
+   Discover how you can scale and govern your AI with watsonx Orchestrate,
+   the control plane that helps you streamline operations, automate
+   workflows, and manage intelligent agents with ease.
+
+    1. Discover watsonx Orchestrate  
+    2. Explore IBM Bob 
+
+      Footnotes
+
+   1. “Elon Musk reins in Grok AI bot to stop election misinformation,” The
+   Register, 28 August 2024
+   2. “Musk’s xAI chatbot Grok keeps randomly responding about ‘white
+   genocide’ in South Africa,” CNBC, 14 May 2025
+   3. “Elon Musk’s AI chatbot, Grok, started calling itself
+   ‘MechaHitler’,” NPR, 9 July 2025
+   4. @MarioNawfal tweet, X (formerly Twitter), 18 February 2025
+   5. “GPT-5.4 pro”, OpenAI, API docs accessed 12 March 2026
+   6. “Announcing Codestral 25.08 and the Complete Mistral Coding Stack for
+   Enterprise,” Mistral AI, 30 July 2025
+   7. Gemma, Google DeepMind, accessed 12 March 2026
+   8. “Alibaba-backed Moonshot releases new Kimi AI model that beats ChatGPT,
+   Claude in coding — and it costs less,” CNBC, 14 July 2025
+   9. “5 Thoughts on Kimi K2 Thinking,” Interconnects, 6 November 2025
+   10. Meta Llama: models page (sorted by “Most Downloads”), Hugging Face,
+   accessed 11 March 2026
+   11. “MiniMax M2.7: Early Echoes of Self-Evolution,” MiniMax, 18 March 2026
+   12. “Introducing Mistral 3,” Mistral AI, 2 December 2025
+   13. Mistral AI: models page (sorted by “Most Downloads”), Hugging Face,
+   accessed 11 March 2026
